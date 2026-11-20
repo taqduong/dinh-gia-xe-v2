@@ -1,0 +1,40 @@
+{
+  "mo_ta": "Kịch bản mẫu để trình diễn. Các ca do nhóm tự đặt để minh họa hành vi hệ thống, không phải tin rao thực.",
+  "kich_ban": [
+    {
+      "id": "TC01", "ten": "Xe phổ thông bình thường (ca chính)",
+      "mo_ta": "Toyota Vios 1.5G CVT đời 2019, 95.000 km, bảo dưỡng hãng, không rủi ro.",
+      "dau_vao": {"phien_ban": "toyota-vios-15g-cvt", "nam_sx": 2019, "so_km": 95000, "khu_vuc": "Miền Bắc", "tinh_trang": "Tốt", "bao_duong_hang": true, "chay_dich_vu": false, "ngap_nuoc": false, "tai_nan_nang": false}
+    },
+    {
+      "id": "TC02", "ten": "Xe bảo dưỡng hãng, đi ít",
+      "mo_ta": "Honda CR-V 1.5L đời 2021, 38.000 km, rất tốt, bảo dưỡng hãng đầy đủ.",
+      "dau_vao": {"phien_ban": "honda-crv-15l", "nam_sx": 2021, "so_km": 38000, "khu_vuc": "Miền Nam", "tinh_trang": "Rất tốt", "bao_duong_hang": true, "chay_dich_vu": false, "ngap_nuoc": false, "tai_nan_nang": false}
+    },
+    {
+      "id": "TC03", "ten": "Xe từng ngập nước",
+      "mo_ta": "Hyundai Accent 1.4 AT đời 2020, 62.000 km, từng ngập nước.",
+      "dau_vao": {"phien_ban": "hyundai-accent-14at", "nam_sx": 2020, "so_km": 62000, "khu_vuc": "Miền Bắc", "tinh_trang": "Trung bình", "bao_duong_hang": false, "chay_dich_vu": false, "ngap_nuoc": true, "tai_nan_nang": false}
+    },
+    {
+      "id": "TC04", "ten": "Xe từng chạy dịch vụ",
+      "mo_ta": "Toyota Innova 2.0E MT đời 2018, 230.000 km, từng chạy dịch vụ.",
+      "dau_vao": {"phien_ban": "toyota-innova-20e-mt", "nam_sx": 2018, "so_km": 230000, "khu_vuc": "Miền Nam", "tinh_trang": "Trung bình", "bao_duong_hang": false, "chay_dich_vu": true, "ngap_nuoc": false, "tai_nan_nang": false}
+    },
+    {
+      "id": "TC05", "ten": "Thiếu tình huống tương tự",
+      "mo_ta": "Toyota Land Cruiser LC300 đời 2022: phiên bản hiếm, kho tình huống không có xe cùng phân khúc.",
+      "dau_vao": {"phien_ban": "toyota-lc300-35", "nam_sx": 2022, "so_km": 30000, "khu_vuc": "Miền Bắc", "tinh_trang": "Rất tốt", "bao_duong_hang": true, "chay_dich_vu": false, "ngap_nuoc": false, "tai_nan_nang": false}
+    },
+    {
+      "id": "TC06", "ten": "Rủi ro kép: ngập nước và tai nạn nặng",
+      "mo_ta": "Kia Cerato 1.6 AT Luxury đời 2019, vừa ngập nước vừa tai nạn nặng.",
+      "dau_vao": {"phien_ban": "kia-cerato-16at-lux", "nam_sx": 2019, "so_km": 80000, "khu_vuc": "Miền Trung", "tinh_trang": "Trung bình", "bao_duong_hang": false, "chay_dich_vu": false, "ngap_nuoc": true, "tai_nan_nang": true}
+    },
+    {
+      "id": "TC07", "ten": "Nghi vấn chỉnh đồng hồ km",
+      "mo_ta": "Mazda3 1.5L Luxury đời 2018 nhưng chỉ 15.000 km.",
+      "dau_vao": {"phien_ban": "mazda3-15-luxury", "nam_sx": 2018, "so_km": 15000, "khu_vuc": "Miền Bắc", "tinh_trang": "Tốt", "bao_duong_hang": false, "chay_dich_vu": false, "ngap_nuoc": false, "tai_nan_nang": false}
+    }
+  ]
+}

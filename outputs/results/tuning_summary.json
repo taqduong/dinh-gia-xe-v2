@@ -1,0 +1,27 @@
+{
+  "tap_validation": {
+    "so_sub_train": 1924,
+    "so_validation": 482,
+    "phuong_phap": "train_test_split(train, test_size=0,2, random_state=7, stratify=phan_khuc)"
+  },
+  "quy_tac_chon": {
+    "k": "cố định 5",
+    "theta": "θ lớn nhất có MAE CBR ≤ MAE tốt nhất × (1 + 1%), tỷ lệ có kết quả ≥ 95%",
+    "w_max": "MAE hệ lai nhỏ nhất",
+    "delta_min": "nhỏ nhất đạt tỷ lệ trong khoảng ≥ 80%",
+    "rf": "MAE validation nhỏ nhất"
+  },
+  "da_chon": {
+    "k": 5,
+    "theta": 0.75,
+    "w_max": 0.8,
+    "delta_min": 0.1,
+    "rf": {
+      "n_estimators": 300,
+      "min_samples_leaf": 1,
+      "max_features": 1.0,
+      "random_state": 42
+    }
+  },
+  "mae_luat_validation": 30.546214472461024
+}

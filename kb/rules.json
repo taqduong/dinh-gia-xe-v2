@@ -1,0 +1,261 @@
+{
+  "mo_ta": "Tập luật sản xuất cho định giá xe ô tô cũ. Mỗi luật: mã, nhóm, tên, mô tả, độ ưu tiên, điều kiện (hội AND), hành động, mẫu giải thích và nguồn tri thức.",
+  "ghi_chu_nguon": "GIẢ ĐỊNH: mọi hệ số nhân, ngưỡng tuổi, ngưỡng tỷ lệ km và mức km chuẩn 15.000 km/năm là giả định kinh nghiệm của nhóm, chưa được hiệu chỉnh bằng dữ liệu thị trường thực hay khảo sát chuyên gia.",
+  "chien_luoc_giai_quyet_xung_dot": [
+    "1. Mỗi chu kỳ, tính tập xung đột gồm các luật chưa thực thi có mọi điều kiện thỏa. Luật có hành động lên giá chỉ đủ điều kiện khi dữ kiện 'gia' đã được khởi tạo (R03).",
+    "2. Chọn luật có độ ưu tiên cao nhất; nếu bằng nhau chọn luật cụ thể hơn (nhiều điều kiện hơn); nếu vẫn bằng nhau chọn mã luật nhỏ hơn.",
+    "3. Mỗi luật chỉ thực thi một lần (refraction).",
+    "4. Nhóm loại trừ 'RUI_RO_NANG': chỉ luật đầu tiên được thực thi trong nhóm làm thay đổi giá; các luật sau trong nhóm vẫn được ghi nhận và phát cảnh báo nhưng không nhân thêm hệ số. Vì vậy khi xe vừa ngập nước vừa tai nạn nặng, R22 (ưu tiên 95) áp dụng hệ số 0,62 thay cho tích 0,70 × 0,75 = 0,525."
+  ],
+  "luat": [
+    {
+      "id": "R01", "nhom": "DAN_XUAT", "ten": "Tính tuổi xe",
+      "mo_ta": "Suy ra tuổi xe từ năm định giá và năm sản xuất.",
+      "uu_tien": 100,
+      "dieu_kien": [{"du_kien": "nam_sx", "phep": "ton_tai"}],
+      "hanh_dong": [{"loai": "suy_dien", "du_kien": "tuoi_xe", "ham": "tinh_tuoi_xe"}],
+      "giai_thich": "Tuổi xe = {nam_dinh_gia} − {nam_sx} = {tuoi_xe} năm.",
+      "nguon": "Định nghĩa"
+    },
+    {
+      "id": "R02", "nhom": "DAN_XUAT", "ten": "Tính tỷ lệ km so với chuẩn",
+      "mo_ta": "Suy ra km chuẩn theo tuổi và tỷ lệ km thực tế/km chuẩn.",
+      "uu_tien": 99,
+      "dieu_kien": [{"du_kien": "tuoi_xe", "phep": "ton_tai"}, {"du_kien": "so_km", "phep": "ton_tai"}],
+      "hanh_dong": [
+        {"loai": "suy_dien", "du_kien": "km_chuan", "ham": "tinh_km_chuan"},
+        {"loai": "suy_dien", "du_kien": "ty_le_km", "ham": "tinh_ty_le_km"}
+      ],
+      "giai_thich": "Km chuẩn = {km_chuan_moi_nam} × max(1, {tuoi_xe}) = {km_chuan} km; tỷ lệ km = {so_km} / {km_chuan} = {ty_le_km}.",
+      "nguon": "Giả định: 15.000 km/năm"
+    },
+    {
+      "id": "R03", "nhom": "KHOI_TAO", "ten": "Khởi tạo giá từ giá xe mới",
+      "mo_ta": "Giá xuất phát bằng giá xe mới tham chiếu của phiên bản trong khung.",
+      "uu_tien": 98,
+      "dieu_kien": [{"du_kien": "gia_moi", "phep": ">", "gia_tri": 0}],
+      "hanh_dong": [{"loai": "dat_gia", "theo": "gia_moi", "he_so": 1.0}],
+      "giai_thich": "Giá xuất phát = giá xe mới tham chiếu {gia_moi} triệu (khung phiên bản).",
+      "nguon": "Khung phiên bản (giá tham chiếu giả định)"
+    },
+    {
+      "id": "R22", "nhom": "RUI_RO", "ten": "Rủi ro kép: ngập nước và tai nạn nặng",
+      "mo_ta": "Xe vừa ngập nước vừa tai nạn nặng: áp dụng một hệ số rủi ro gộp, không nhân dồn hai hệ số.",
+      "uu_tien": 95,
+      "nhom_loai_tru": "RUI_RO_NANG",
+      "dieu_kien": [{"du_kien": "ngap_nuoc", "phep": "==", "gia_tri": true}, {"du_kien": "tai_nan_nang", "phep": "==", "gia_tri": true}],
+      "hanh_dong": [
+        {"loai": "nhan_gia", "he_so": 0.62},
+        {"loai": "canh_bao", "muc": "nghiem_trong", "noi_dung": "Xe vừa ngập nước vừa tai nạn nặng: rủi ro kỹ thuật rất cao, cần giám định độc lập trước khi giao dịch."}
+      ],
+      "giai_thich": "Ngập nước và tai nạn nặng cùng xảy ra → hệ số rủi ro gộp 0,62 (thay cho 0,70 × 0,75).",
+      "nguon": "Giả định của nhóm"
+    },
+    {
+      "id": "R20", "nhom": "RUI_RO", "ten": "Xe từng ngập nước",
+      "mo_ta": "Ngập nước gây hư hại điện, nội thất, khó phát hiện hết.",
+      "uu_tien": 92,
+      "nhom_loai_tru": "RUI_RO_NANG",
+      "dieu_kien": [{"du_kien": "ngap_nuoc", "phep": "==", "gia_tri": true}],
+      "hanh_dong": [
+        {"loai": "nhan_gia", "he_so": 0.70},
+        {"loai": "canh_bao", "muc": "nghiem_trong", "noi_dung": "Xe từng ngập nước: kiểm tra hệ thống điện, cảm biến, sàn xe; giá giảm mạnh và biến động lớn."}
+      ],
+      "giai_thich": "Xe từng ngập nước → nhân 0,70.",
+      "nguon": "Giả định của nhóm"
+    },
+    {
+      "id": "R21", "nhom": "RUI_RO", "ten": "Xe từng tai nạn nặng",
+      "mo_ta": "Tai nạn nặng ảnh hưởng khung gầm, an toàn và thanh khoản.",
+      "uu_tien": 91,
+      "nhom_loai_tru": "RUI_RO_NANG",
+      "dieu_kien": [{"du_kien": "tai_nan_nang", "phep": "==", "gia_tri": true}],
+      "hanh_dong": [
+        {"loai": "nhan_gia", "he_so": 0.75},
+        {"loai": "canh_bao", "muc": "nghiem_trong", "noi_dung": "Xe từng tai nạn nặng: kiểm tra khung gầm, túi khí và lịch sử sửa chữa."}
+      ],
+      "giai_thich": "Xe từng tai nạn nặng → nhân 0,75.",
+      "nguon": "Giả định của nhóm"
+    },
+    {
+      "id": "R13", "nhom": "KIEM_TRA", "ten": "Nghi vấn chỉnh đồng hồ km",
+      "mo_ta": "Xe từ 5 năm tuổi nhưng số km dưới 25% km chuẩn là bất thường.",
+      "uu_tien": 85,
+      "dieu_kien": [{"du_kien": "tuoi_xe", "phep": ">=", "gia_tri": 5}, {"du_kien": "ty_le_km", "phep": "<", "gia_tri": 0.25}],
+      "hanh_dong": [
+        {"loai": "suy_dien", "du_kien": "nghi_tua_odo", "ham": "dat_dung"},
+        {"loai": "canh_bao", "muc": "chu_y", "noi_dung": "Số km thấp bất thường so với tuổi xe: nghi vấn chỉnh đồng hồ km, cần đối chiếu lịch sử bảo dưỡng. Không cộng điểm đi ít."}
+      ],
+      "giai_thich": "Xe {tuoi_xe} năm nhưng tỷ lệ km chỉ {ty_le_km} (< 0,25) → đặt nghi_tua_odo = đúng, chặn R10.",
+      "nguon": "Giả định của nhóm"
+    },
+    {
+      "id": "R04", "nhom": "TUOI_XE", "ten": "Khấu hao xe 0–1 năm",
+      "mo_ta": "Xe gần như mới vẫn mất giá ngay khi lăn bánh.",
+      "uu_tien": 80,
+      "dieu_kien": [{"du_kien": "tuoi_xe", "phep": "<=", "gia_tri": 1}],
+      "hanh_dong": [{"loai": "nhan_gia", "he_so": 0.88}],
+      "giai_thich": "Xe {tuoi_xe} năm tuổi (nhóm 0–1 năm) → nhân 0,88.",
+      "nguon": "Giả định của nhóm"
+    },
+    {
+      "id": "R05", "nhom": "TUOI_XE", "ten": "Khấu hao xe 2–3 năm",
+      "mo_ta": "Nhóm tuổi 2–3 năm.",
+      "uu_tien": 80,
+      "dieu_kien": [{"du_kien": "tuoi_xe", "phep": ">=", "gia_tri": 2}, {"du_kien": "tuoi_xe", "phep": "<=", "gia_tri": 3}],
+      "hanh_dong": [{"loai": "nhan_gia", "he_so": 0.79}],
+      "giai_thich": "Xe {tuoi_xe} năm tuổi (nhóm 2–3 năm) → nhân 0,79.",
+      "nguon": "Giả định của nhóm"
+    },
+    {
+      "id": "R06", "nhom": "TUOI_XE", "ten": "Khấu hao xe 4–5 năm",
+      "mo_ta": "Nhóm tuổi 4–5 năm.",
+      "uu_tien": 80,
+      "dieu_kien": [{"du_kien": "tuoi_xe", "phep": ">=", "gia_tri": 4}, {"du_kien": "tuoi_xe", "phep": "<=", "gia_tri": 5}],
+      "hanh_dong": [{"loai": "nhan_gia", "he_so": 0.68}],
+      "giai_thich": "Xe {tuoi_xe} năm tuổi (nhóm 4–5 năm) → nhân 0,68.",
+      "nguon": "Giả định của nhóm"
+    },
+    {
+      "id": "R07", "nhom": "TUOI_XE", "ten": "Khấu hao xe 6–8 năm",
+      "mo_ta": "Nhóm tuổi 6–8 năm.",
+      "uu_tien": 80,
+      "dieu_kien": [{"du_kien": "tuoi_xe", "phep": ">=", "gia_tri": 6}, {"du_kien": "tuoi_xe", "phep": "<=", "gia_tri": 8}],
+      "hanh_dong": [{"loai": "nhan_gia", "he_so": 0.57}],
+      "giai_thich": "Xe {tuoi_xe} năm tuổi (nhóm 6–8 năm) → nhân 0,57.",
+      "nguon": "Giả định của nhóm"
+    },
+    {
+      "id": "R08", "nhom": "TUOI_XE", "ten": "Khấu hao xe 9–11 năm",
+      "mo_ta": "Nhóm tuổi 9–11 năm.",
+      "uu_tien": 80,
+      "dieu_kien": [{"du_kien": "tuoi_xe", "phep": ">=", "gia_tri": 9}, {"du_kien": "tuoi_xe", "phep": "<=", "gia_tri": 11}],
+      "hanh_dong": [{"loai": "nhan_gia", "he_so": 0.46}],
+      "giai_thich": "Xe {tuoi_xe} năm tuổi (nhóm 9–11 năm) → nhân 0,46.",
+      "nguon": "Giả định của nhóm"
+    },
+    {
+      "id": "R09", "nhom": "TUOI_XE", "ten": "Khấu hao xe từ 12 năm",
+      "mo_ta": "Xe từ 12 năm tuổi trở lên.",
+      "uu_tien": 80,
+      "dieu_kien": [{"du_kien": "tuoi_xe", "phep": ">=", "gia_tri": 12}],
+      "hanh_dong": [{"loai": "nhan_gia", "he_so": 0.37}],
+      "giai_thich": "Xe {tuoi_xe} năm tuổi (từ 12 năm) → nhân 0,37.",
+      "nguon": "Giả định của nhóm"
+    },
+    {
+      "id": "R10", "nhom": "SO_KM", "ten": "Xe đi ít",
+      "mo_ta": "Số km dưới 60% km chuẩn và không có nghi vấn chỉnh đồng hồ.",
+      "uu_tien": 70,
+      "dieu_kien": [{"du_kien": "ty_le_km", "phep": "<", "gia_tri": 0.6}, {"du_kien": "nghi_tua_odo", "phep": "khong_ton_tai"}],
+      "hanh_dong": [{"loai": "nhan_gia", "he_so": 1.04}],
+      "giai_thich": "Tỷ lệ km {ty_le_km} < 0,6 và không nghi chỉnh đồng hồ → nhân 1,04.",
+      "nguon": "Giả định của nhóm"
+    },
+    {
+      "id": "R11", "nhom": "SO_KM", "ten": "Xe đi nhiều",
+      "mo_ta": "Số km từ 1,3 đến dưới 1,8 lần km chuẩn.",
+      "uu_tien": 70,
+      "dieu_kien": [{"du_kien": "ty_le_km", "phep": ">=", "gia_tri": 1.3}, {"du_kien": "ty_le_km", "phep": "<", "gia_tri": 1.8}],
+      "hanh_dong": [{"loai": "nhan_gia", "he_so": 0.95}],
+      "giai_thich": "Tỷ lệ km {ty_le_km} trong [1,3; 1,8) → nhân 0,95.",
+      "nguon": "Giả định của nhóm"
+    },
+    {
+      "id": "R12", "nhom": "SO_KM", "ten": "Xe đi rất nhiều",
+      "mo_ta": "Số km từ 1,8 lần km chuẩn trở lên.",
+      "uu_tien": 70,
+      "dieu_kien": [{"du_kien": "ty_le_km", "phep": ">=", "gia_tri": 1.8}],
+      "hanh_dong": [{"loai": "nhan_gia", "he_so": 0.89}],
+      "giai_thich": "Tỷ lệ km {ty_le_km} ≥ 1,8 → nhân 0,89.",
+      "nguon": "Giả định của nhóm"
+    },
+    {
+      "id": "R14", "nhom": "TINH_TRANG", "ten": "Tình trạng rất tốt",
+      "mo_ta": "Ngoại thất, nội thất, máy móc gần như nguyên bản.",
+      "uu_tien": 60,
+      "dieu_kien": [{"du_kien": "tinh_trang", "phep": "==", "gia_tri": "Rất tốt"}],
+      "hanh_dong": [{"loai": "nhan_gia", "he_so": 1.04}],
+      "giai_thich": "Tình trạng {tinh_trang} → nhân 1,04.",
+      "nguon": "Giả định của nhóm"
+    },
+    {
+      "id": "R15", "nhom": "TINH_TRANG", "ten": "Tình trạng trung bình",
+      "mo_ta": "Có hao mòn, cần sửa chữa nhỏ.",
+      "uu_tien": 60,
+      "dieu_kien": [{"du_kien": "tinh_trang", "phep": "==", "gia_tri": "Trung bình"}],
+      "hanh_dong": [{"loai": "nhan_gia", "he_so": 0.92}],
+      "giai_thich": "Tình trạng {tinh_trang} → nhân 0,92.",
+      "nguon": "Giả định của nhóm"
+    },
+    {
+      "id": "R16", "nhom": "TINH_TRANG", "ten": "Tình trạng kém",
+      "mo_ta": "Hư hỏng nhiều hạng mục, chi phí phục hồi lớn.",
+      "uu_tien": 60,
+      "dieu_kien": [{"du_kien": "tinh_trang", "phep": "==", "gia_tri": "Kém"}],
+      "hanh_dong": [
+        {"loai": "nhan_gia", "he_so": 0.80},
+        {"loai": "canh_bao", "muc": "chu_y", "noi_dung": "Tình trạng kém: nên ước tính chi phí phục hồi trước khi chốt giá."}
+      ],
+      "giai_thich": "Tình trạng {tinh_trang} → nhân 0,80.",
+      "nguon": "Giả định của nhóm"
+    },
+    {
+      "id": "R19", "nhom": "LICH_SU", "ten": "Từng chạy dịch vụ",
+      "mo_ta": "Xe chạy dịch vụ/taxi công nghệ hao mòn nhanh, thanh khoản thấp.",
+      "uu_tien": 55,
+      "dieu_kien": [{"du_kien": "chay_dich_vu", "phep": "==", "gia_tri": true}],
+      "hanh_dong": [
+        {"loai": "nhan_gia", "he_so": 0.88},
+        {"loai": "canh_bao", "muc": "chu_y", "noi_dung": "Xe từng chạy dịch vụ: hao mòn nội thất, hộp số, hệ thống treo thường cao hơn xe gia đình."}
+      ],
+      "giai_thich": "Xe từng chạy dịch vụ → nhân 0,88.",
+      "nguon": "Giả định của nhóm"
+    },
+    {
+      "id": "R17", "nhom": "LICH_SU", "ten": "Bảo dưỡng định kỳ tại hãng",
+      "mo_ta": "Có lịch sử bảo dưỡng chính hãng, minh bạch tình trạng.",
+      "uu_tien": 50,
+      "dieu_kien": [{"du_kien": "bao_duong_hang", "phep": "==", "gia_tri": true}],
+      "hanh_dong": [{"loai": "nhan_gia", "he_so": 1.03}],
+      "giai_thich": "Có lịch sử bảo dưỡng tại hãng → nhân 1,03.",
+      "nguon": "Giả định của nhóm"
+    },
+    {
+      "id": "R18", "nhom": "DAC_DIEM", "ten": "Hộp số sàn",
+      "mo_ta": "Thuộc tính kế thừa từ khung phiên bản: xe số sàn có nhu cầu thấp hơn ở thị trường xe cũ.",
+      "uu_tien": 50,
+      "dieu_kien": [{"du_kien": "hop_so", "phep": "==", "gia_tri": "MT"}],
+      "hanh_dong": [{"loai": "nhan_gia", "he_so": 0.96}],
+      "giai_thich": "Phiên bản dùng hộp số {hop_so} (từ khung) → nhân 0,96.",
+      "nguon": "Giả định của nhóm"
+    },
+    {
+      "id": "R23", "nhom": "THUONG_HIEU", "ten": "Thương hiệu giữ giá cao",
+      "mo_ta": "Thuộc tính kế thừa từ khung hãng: nhóm giữ giá cao.",
+      "uu_tien": 40,
+      "dieu_kien": [{"du_kien": "nhom_giu_gia", "phep": "==", "gia_tri": "cao"}],
+      "hanh_dong": [{"loai": "nhan_gia", "he_so": 1.05}],
+      "giai_thich": "Hãng {hang} thuộc nhóm giữ giá cao (khung hãng) → nhân 1,05.",
+      "nguon": "Giả định của nhóm"
+    },
+    {
+      "id": "R24", "nhom": "THUONG_HIEU", "ten": "Thương hiệu giữ giá thấp",
+      "mo_ta": "Thuộc tính kế thừa từ khung hãng: nhóm giữ giá thấp.",
+      "uu_tien": 40,
+      "dieu_kien": [{"du_kien": "nhom_giu_gia", "phep": "==", "gia_tri": "thap"}],
+      "hanh_dong": [{"loai": "nhan_gia", "he_so": 0.95}],
+      "giai_thich": "Hãng {hang} thuộc nhóm giữ giá thấp (khung hãng) → nhân 0,95.",
+      "nguon": "Giả định của nhóm"
+    },
+    {
+      "id": "R25", "nhom": "RANG_BUOC", "ten": "Trần giá 95% giá xe mới",
+      "mo_ta": "Giá xe đã qua sử dụng theo luật không vượt 95% giá xe mới tham chiếu.",
+      "uu_tien": 10,
+      "dieu_kien": [{"du_kien": "gia", "phep": ">", "tham_chieu": "gia_moi", "he_so": 0.95}],
+      "hanh_dong": [{"loai": "dat_gia", "theo": "gia_moi", "he_so": 0.95}],
+      "giai_thich": "Giá tạm tính vượt 95% giá xe mới → giới hạn bằng 0,95 × {gia_moi} triệu.",
+      "nguon": "Giả định của nhóm"
+    }
+  ]
+}

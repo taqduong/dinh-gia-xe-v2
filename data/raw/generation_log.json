@@ -1,0 +1,15 @@
+{
+  "nguon": "Dữ liệu mô phỏng do scripts/generate_data.py sinh ra; KHÔNG thu thập từ website hay khảo sát.",
+  "seed": 2026,
+  "so_ban_ghi_sinh": 3100,
+  "so_ban_ghi_raw_sau_chen_loi": 3137,
+  "loi_co_y_da_chen": {
+    "bien_the_van_ban": 248,
+    "thieu_gia_tri": 40,
+    "go_nham_gia": 19,
+    "nam_khong_hop_le": 9,
+    "km_khong_hop_le": 9,
+    "phien_ban_la": 16,
+    "trung_lap": 37
+  }
+}

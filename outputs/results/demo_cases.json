@@ -1,0 +1,3643 @@
+[
+  {
+    "dau_vao": {
+      "phien_ban": "toyota-vios-15g-cvt",
+      "nam_sx": 2019,
+      "so_km": 95000,
+      "khu_vuc": "Miền Bắc",
+      "tinh_trang": "Tốt",
+      "bao_duong_hang": true,
+      "chay_dich_vu": false,
+      "ngap_nuoc": false,
+      "tai_nan_nang": false
+    },
+    "hop_le": true,
+    "xe": "Toyota Vios 1.5G CVT",
+    "phan_khuc": "B",
+    "gia_moi": 545.0,
+    "gia_luat": 335.96797499999997,
+    "gia_cbr": 342.62990428985484,
+    "gia_de_xuat": 341.0603359840203,
+    "w_cbr": 0.7643973333333334,
+    "alpha": 0.23560266666666663,
+    "n_xe_tuong_tu": 5,
+    "sim_tb": 0.9554966666666667,
+    "cv": 0.061742385765086116,
+    "d": 0.019532993394362336,
+    "delta": 0.1,
+    "khoang_thap": 306.9543023856183,
+    "khoang_cao": 375.16636958242236,
+    "muc_tin_cay": "Cao",
+    "ly_do_tin_cay": [
+      "5 xe tương tự, Sim TB 0,955 ≥ 0,85, luật và CBR chênh 2,0% ≤ 10%, không cảnh báo."
+    ],
+    "trang_thai_cbr": "du_du_lieu",
+    "ly_do_cbr": "",
+    "so_ung_vien_cbr": 495,
+    "so_dat_nguong_cbr": 128,
+    "luat_kich_hoat": [
+      "R01",
+      "R02",
+      "R03",
+      "R07",
+      "R17",
+      "R23"
+    ],
+    "vet": [
+      {
+        "chu_ky": 1,
+        "ma_luat": "R01",
+        "nhom": "DAN_XUAT",
+        "ten": "Tính tuổi xe",
+        "uu_tien": 100,
+        "tap_xung_dot": [
+          "R01",
+          "R03"
+        ],
+        "dieu_kien_thoa": [
+          "năm sản xuất đã biết (2019)"
+        ],
+        "giai_thich": "Tuổi xe = 2026 − 2019 = 7 năm.",
+        "gia_truoc": null,
+        "gia_sau": null,
+        "he_so": null,
+        "thay_doi": null,
+        "du_kien_moi": {
+          "tuoi_xe": 7
+        },
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 2,
+        "ma_luat": "R02",
+        "nhom": "DAN_XUAT",
+        "ten": "Tính tỷ lệ km so với chuẩn",
+        "uu_tien": 99,
+        "tap_xung_dot": [
+          "R02",
+          "R03"
+        ],
+        "dieu_kien_thoa": [
+          "tuổi xe đã biết (7)",
+          "số km đã biết (95.000)"
+        ],
+        "giai_thich": "Km chuẩn = 15.000 × max(1, 7) = 105.000 km; tỷ lệ km = 95.000 / 105.000 = 0,90.",
+        "gia_truoc": null,
+        "gia_sau": null,
+        "he_so": null,
+        "thay_doi": null,
+        "du_kien_moi": {
+          "km_chuan": 105000.0,
+          "ty_le_km": 0.9047619047619048
+        },
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 3,
+        "ma_luat": "R03",
+        "nhom": "KHOI_TAO",
+        "ten": "Khởi tạo giá từ giá xe mới",
+        "uu_tien": 98,
+        "tap_xung_dot": [
+          "R03"
+        ],
+        "dieu_kien_thoa": [
+          "giá xe mới = 545 > 0"
+        ],
+        "giai_thich": "Giá xuất phát = giá xe mới tham chiếu 545 triệu (khung phiên bản).",
+        "gia_truoc": null,
+        "gia_sau": 545.0,
+        "he_so": null,
+        "thay_doi": null,
+        "du_kien_moi": {
+          "gia": 545.0
+        },
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 4,
+        "ma_luat": "R07",
+        "nhom": "TUOI_XE",
+        "ten": "Khấu hao xe 6–8 năm",
+        "uu_tien": 80,
+        "tap_xung_dot": [
+          "R07",
+          "R17",
+          "R23",
+          "R25"
+        ],
+        "dieu_kien_thoa": [
+          "tuổi xe = 7 ≥ 6",
+          "tuổi xe = 7 ≤ 8"
+        ],
+        "giai_thich": "Xe 7 năm tuổi (nhóm 6–8 năm) → nhân 0,57.",
+        "gia_truoc": 545.0,
+        "gia_sau": 310.65,
+        "he_so": 0.57,
+        "thay_doi": -234.35000000000002,
+        "du_kien_moi": {},
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 5,
+        "ma_luat": "R17",
+        "nhom": "LICH_SU",
+        "ten": "Bảo dưỡng định kỳ tại hãng",
+        "uu_tien": 50,
+        "tap_xung_dot": [
+          "R17",
+          "R23"
+        ],
+        "dieu_kien_thoa": [
+          "bảo dưỡng hãng = có"
+        ],
+        "giai_thich": "Có lịch sử bảo dưỡng tại hãng → nhân 1,03.",
+        "gia_truoc": 310.65,
+        "gia_sau": 319.9695,
+        "he_so": 1.03,
+        "thay_doi": 9.319500000000005,
+        "du_kien_moi": {},
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 6,
+        "ma_luat": "R23",
+        "nhom": "THUONG_HIEU",
+        "ten": "Thương hiệu giữ giá cao",
+        "uu_tien": 40,
+        "tap_xung_dot": [
+          "R23"
+        ],
+        "dieu_kien_thoa": [
+          "nhóm giữ giá = cao"
+        ],
+        "giai_thich": "Hãng Toyota thuộc nhóm giữ giá cao (khung hãng) → nhân 1,05.",
+        "gia_truoc": 319.9695,
+        "gia_sau": 335.96797499999997,
+        "he_so": 1.05,
+        "thay_doi": 15.998474999999985,
+        "du_kien_moi": {},
+        "canh_bao": [],
+        "ghi_chu": ""
+      }
+    ],
+    "canh_bao": [],
+    "xe_tuong_tu": [
+      {
+        "ma_tin": "MP00710",
+        "phien_ban_id": "toyota-vios-15g-cvt",
+        "ten_xe": "Toyota Vios 1.5G CVT",
+        "nam_sx": 2019,
+        "so_km": 90200.0,
+        "khu_vuc": "Miền Bắc",
+        "tinh_trang": "Tốt",
+        "bao_duong_hang": true,
+        "chay_dich_vu": false,
+        "ngap_nuoc": false,
+        "tai_nan_nang": false,
+        "gia_goc": 353.0,
+        "gia_luat_ca": 335.96797499999997,
+        "ty_le_hieu_chinh": 1.0,
+        "gia_hieu_chinh": 353.0,
+        "do_tuong_tu": 0.9928,
+        "tuong_tu_cuc_bo": {
+          "phien_ban": 1.0,
+          "nam_sx": 1.0,
+          "so_km": 0.952,
+          "tinh_trang": 1.0,
+          "khu_vuc": 1.0,
+          "lich_su": 1.0,
+          "rui_ro": 1.0
+        }
+      },
+      {
+        "ma_tin": "MP01887",
+        "phien_ban_id": "toyota-vios-15g-cvt",
+        "ten_xe": "Toyota Vios 1.5G CVT",
+        "nam_sx": 2019,
+        "so_km": 84400.0,
+        "khu_vuc": "Miền Nam",
+        "tinh_trang": "Tốt",
+        "bao_duong_hang": true,
+        "chay_dich_vu": false,
+        "ngap_nuoc": false,
+        "tai_nan_nang": false,
+        "gia_goc": 376.0,
+        "gia_luat_ca": 335.96797499999997,
+        "ty_le_hieu_chinh": 1.0,
+        "gia_hieu_chinh": 376.0,
+        "do_tuong_tu": 0.9641,
+        "tuong_tu_cuc_bo": {
+          "phien_ban": 1.0,
+          "nam_sx": 1.0,
+          "so_km": 0.894,
+          "tinh_trang": 1.0,
+          "khu_vuc": 0.6,
+          "lich_su": 1.0,
+          "rui_ro": 1.0
+        }
+      },
+      {
+        "ma_tin": "MP02787",
+        "phien_ban_id": "toyota-vios-15g-cvt",
+        "ten_xe": "Toyota Vios 1.5G CVT",
+        "nam_sx": 2019,
+        "so_km": 87300.0,
+        "khu_vuc": "Miền Bắc",
+        "tinh_trang": "Trung bình",
+        "bao_duong_hang": true,
+        "chay_dich_vu": false,
+        "ngap_nuoc": false,
+        "tai_nan_nang": false,
+        "gia_goc": 311.0,
+        "gia_luat_ca": 309.090537,
+        "ty_le_hieu_chinh": 1.0869565217391304,
+        "gia_hieu_chinh": 338.04347826086956,
+        "do_tuong_tu": 0.9551166666666666,
+        "tuong_tu_cuc_bo": {
+          "phien_ban": 1.0,
+          "nam_sx": 1.0,
+          "so_km": 0.923,
+          "tinh_trang": 0.6666666666666667,
+          "khu_vuc": 1.0,
+          "lich_su": 1.0,
+          "rui_ro": 1.0
+        }
+      },
+      {
+        "ma_tin": "MP02330",
+        "phien_ban_id": "toyota-vios-15g-cvt",
+        "ten_xe": "Toyota Vios 1.5G CVT",
+        "nam_sx": 2018,
+        "so_km": 103300.0,
+        "khu_vuc": "Miền Bắc",
+        "tinh_trang": "Tốt",
+        "bao_duong_hang": true,
+        "chay_dich_vu": false,
+        "ngap_nuoc": false,
+        "tai_nan_nang": false,
+        "gia_goc": 313.0,
+        "gia_luat_ca": 335.96797499999997,
+        "ty_le_hieu_chinh": 1.0,
+        "gia_hieu_chinh": 313.0,
+        "do_tuong_tu": 0.93755,
+        "tuong_tu_cuc_bo": {
+          "phien_ban": 1.0,
+          "nam_sx": 0.75,
+          "so_km": 0.917,
+          "tinh_trang": 1.0,
+          "khu_vuc": 1.0,
+          "lich_su": 1.0,
+          "rui_ro": 1.0
+        }
+      },
+      {
+        "ma_tin": "MP02606",
+        "phien_ban_id": "toyota-vios-15g-cvt",
+        "ten_xe": "Toyota Vios 1.5G CVT",
+        "nam_sx": 2019,
+        "so_km": 82500.0,
+        "khu_vuc": "Miền Nam",
+        "tinh_trang": "Trung bình",
+        "bao_duong_hang": true,
+        "chay_dich_vu": false,
+        "ngap_nuoc": false,
+        "tai_nan_nang": false,
+        "gia_goc": 305.0,
+        "gia_luat_ca": 309.090537,
+        "ty_le_hieu_chinh": 1.0869565217391304,
+        "gia_hieu_chinh": 331.52173913043475,
+        "do_tuong_tu": 0.9279166666666666,
+        "tuong_tu_cuc_bo": {
+          "phien_ban": 1.0,
+          "nam_sx": 1.0,
+          "so_km": 0.875,
+          "tinh_trang": 0.6666666666666667,
+          "khu_vuc": 0.6,
+          "lich_su": 1.0,
+          "rui_ro": 1.0
+        }
+      }
+    ],
+    "thoi_gian_ms": 4.103086000213807,
+    "id": "TC01",
+    "ten": "Xe phổ thông bình thường (ca chính)",
+    "mo_ta": "Toyota Vios 1.5G CVT đời 2019, 95.000 km, bảo dưỡng hãng, không rủi ro.",
+    "can_cu_hieu_chinh": [
+      [
+        {
+          "nhom": "GIA_MOI",
+          "yeu_to": "Giá xe mới tham chiếu",
+          "xe_can_dinh_gia": 545.0,
+          "xe_so_sanh": 545.0,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TUOI_XE",
+          "yeu_to": "Tuổi xe",
+          "xe_can_dinh_gia": 0.57,
+          "xe_so_sanh": 0.57,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "LICH_SU",
+          "yeu_to": "Lịch sử sử dụng/bảo dưỡng",
+          "xe_can_dinh_gia": 1.03,
+          "xe_so_sanh": 1.03,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "THUONG_HIEU",
+          "yeu_to": "Thương hiệu",
+          "xe_can_dinh_gia": 1.05,
+          "xe_so_sanh": 1.05,
+          "ty_so": 1.0
+        }
+      ],
+      [
+        {
+          "nhom": "GIA_MOI",
+          "yeu_to": "Giá xe mới tham chiếu",
+          "xe_can_dinh_gia": 545.0,
+          "xe_so_sanh": 545.0,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TUOI_XE",
+          "yeu_to": "Tuổi xe",
+          "xe_can_dinh_gia": 0.57,
+          "xe_so_sanh": 0.57,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "LICH_SU",
+          "yeu_to": "Lịch sử sử dụng/bảo dưỡng",
+          "xe_can_dinh_gia": 1.03,
+          "xe_so_sanh": 1.03,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "THUONG_HIEU",
+          "yeu_to": "Thương hiệu",
+          "xe_can_dinh_gia": 1.05,
+          "xe_so_sanh": 1.05,
+          "ty_so": 1.0
+        }
+      ],
+      [
+        {
+          "nhom": "GIA_MOI",
+          "yeu_to": "Giá xe mới tham chiếu",
+          "xe_can_dinh_gia": 545.0,
+          "xe_so_sanh": 545.0,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TUOI_XE",
+          "yeu_to": "Tuổi xe",
+          "xe_can_dinh_gia": 0.57,
+          "xe_so_sanh": 0.57,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TINH_TRANG",
+          "yeu_to": "Tình trạng",
+          "xe_can_dinh_gia": 1.0,
+          "xe_so_sanh": 0.92,
+          "ty_so": 1.0869565217391304
+        },
+        {
+          "nhom": "LICH_SU",
+          "yeu_to": "Lịch sử sử dụng/bảo dưỡng",
+          "xe_can_dinh_gia": 1.03,
+          "xe_so_sanh": 1.03,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "THUONG_HIEU",
+          "yeu_to": "Thương hiệu",
+          "xe_can_dinh_gia": 1.05,
+          "xe_so_sanh": 1.05,
+          "ty_so": 1.0
+        }
+      ],
+      [
+        {
+          "nhom": "GIA_MOI",
+          "yeu_to": "Giá xe mới tham chiếu",
+          "xe_can_dinh_gia": 545.0,
+          "xe_so_sanh": 545.0,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TUOI_XE",
+          "yeu_to": "Tuổi xe",
+          "xe_can_dinh_gia": 0.57,
+          "xe_so_sanh": 0.57,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "LICH_SU",
+          "yeu_to": "Lịch sử sử dụng/bảo dưỡng",
+          "xe_can_dinh_gia": 1.03,
+          "xe_so_sanh": 1.03,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "THUONG_HIEU",
+          "yeu_to": "Thương hiệu",
+          "xe_can_dinh_gia": 1.05,
+          "xe_so_sanh": 1.05,
+          "ty_so": 1.0
+        }
+      ],
+      [
+        {
+          "nhom": "GIA_MOI",
+          "yeu_to": "Giá xe mới tham chiếu",
+          "xe_can_dinh_gia": 545.0,
+          "xe_so_sanh": 545.0,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TUOI_XE",
+          "yeu_to": "Tuổi xe",
+          "xe_can_dinh_gia": 0.57,
+          "xe_so_sanh": 0.57,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TINH_TRANG",
+          "yeu_to": "Tình trạng",
+          "xe_can_dinh_gia": 1.0,
+          "xe_so_sanh": 0.92,
+          "ty_so": 1.0869565217391304
+        },
+        {
+          "nhom": "LICH_SU",
+          "yeu_to": "Lịch sử sử dụng/bảo dưỡng",
+          "xe_can_dinh_gia": 1.03,
+          "xe_so_sanh": 1.03,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "THUONG_HIEU",
+          "yeu_to": "Thương hiệu",
+          "xe_can_dinh_gia": 1.05,
+          "xe_so_sanh": 1.05,
+          "ty_so": 1.0
+        }
+      ]
+    ]
+  },
+  {
+    "dau_vao": {
+      "phien_ban": "honda-crv-15l",
+      "nam_sx": 2021,
+      "so_km": 38000,
+      "khu_vuc": "Miền Nam",
+      "tinh_trang": "Rất tốt",
+      "bao_duong_hang": true,
+      "chay_dich_vu": false,
+      "ngap_nuoc": false,
+      "tai_nan_nang": false
+    },
+    "hop_le": true,
+    "xe": "Honda CR-V 1.5L",
+    "phan_khuc": "SUV-C",
+    "gia_moi": 1118.0,
+    "gia_luat": 889.2910440960001,
+    "gia_cbr": 911.7258424966545,
+    "gia_de_xuat": 905.8074230263037,
+    "w_cbr": 0.7361946666666667,
+    "alpha": 0.26380533333333334,
+    "n_xe_tuong_tu": 5,
+    "sim_tb": 0.9202433333333333,
+    "cv": 0.10010987487727857,
+    "d": 0.024767735205458774,
+    "delta": 0.10010987487727857,
+    "khoang_thap": 815.1271552442303,
+    "khoang_cao": 996.4876908083771,
+    "muc_tin_cay": "Cao",
+    "ly_do_tin_cay": [
+      "5 xe tương tự, Sim TB 0,920 ≥ 0,85, luật và CBR chênh 2,5% ≤ 10%, không cảnh báo."
+    ],
+    "trang_thai_cbr": "du_du_lieu",
+    "ly_do_cbr": "",
+    "so_ung_vien_cbr": 387,
+    "so_dat_nguong_cbr": 69,
+    "luat_kich_hoat": [
+      "R01",
+      "R02",
+      "R03",
+      "R06",
+      "R10",
+      "R14",
+      "R17",
+      "R23"
+    ],
+    "vet": [
+      {
+        "chu_ky": 1,
+        "ma_luat": "R01",
+        "nhom": "DAN_XUAT",
+        "ten": "Tính tuổi xe",
+        "uu_tien": 100,
+        "tap_xung_dot": [
+          "R01",
+          "R03"
+        ],
+        "dieu_kien_thoa": [
+          "năm sản xuất đã biết (2021)"
+        ],
+        "giai_thich": "Tuổi xe = 2026 − 2021 = 5 năm.",
+        "gia_truoc": null,
+        "gia_sau": null,
+        "he_so": null,
+        "thay_doi": null,
+        "du_kien_moi": {
+          "tuoi_xe": 5
+        },
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 2,
+        "ma_luat": "R02",
+        "nhom": "DAN_XUAT",
+        "ten": "Tính tỷ lệ km so với chuẩn",
+        "uu_tien": 99,
+        "tap_xung_dot": [
+          "R02",
+          "R03"
+        ],
+        "dieu_kien_thoa": [
+          "tuổi xe đã biết (5)",
+          "số km đã biết (38.000)"
+        ],
+        "giai_thich": "Km chuẩn = 15.000 × max(1, 5) = 75.000 km; tỷ lệ km = 38.000 / 75.000 = 0,51.",
+        "gia_truoc": null,
+        "gia_sau": null,
+        "he_so": null,
+        "thay_doi": null,
+        "du_kien_moi": {
+          "km_chuan": 75000.0,
+          "ty_le_km": 0.5066666666666667
+        },
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 3,
+        "ma_luat": "R03",
+        "nhom": "KHOI_TAO",
+        "ten": "Khởi tạo giá từ giá xe mới",
+        "uu_tien": 98,
+        "tap_xung_dot": [
+          "R03"
+        ],
+        "dieu_kien_thoa": [
+          "giá xe mới = 1.118 > 0"
+        ],
+        "giai_thich": "Giá xuất phát = giá xe mới tham chiếu 1.118 triệu (khung phiên bản).",
+        "gia_truoc": null,
+        "gia_sau": 1118.0,
+        "he_so": null,
+        "thay_doi": null,
+        "du_kien_moi": {
+          "gia": 1118.0
+        },
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 4,
+        "ma_luat": "R06",
+        "nhom": "TUOI_XE",
+        "ten": "Khấu hao xe 4–5 năm",
+        "uu_tien": 80,
+        "tap_xung_dot": [
+          "R06",
+          "R10",
+          "R14",
+          "R17",
+          "R23",
+          "R25"
+        ],
+        "dieu_kien_thoa": [
+          "tuổi xe = 5 ≥ 4",
+          "tuổi xe = 5 ≤ 5"
+        ],
+        "giai_thich": "Xe 5 năm tuổi (nhóm 4–5 năm) → nhân 0,68.",
+        "gia_truoc": 1118.0,
+        "gia_sau": 760.24,
+        "he_so": 0.68,
+        "thay_doi": -357.76,
+        "du_kien_moi": {},
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 5,
+        "ma_luat": "R10",
+        "nhom": "SO_KM",
+        "ten": "Xe đi ít",
+        "uu_tien": 70,
+        "tap_xung_dot": [
+          "R10",
+          "R14",
+          "R17",
+          "R23"
+        ],
+        "dieu_kien_thoa": [
+          "tỷ lệ km = 0,51 < 0,60",
+          "chưa có dữ kiện 'nghi chỉnh đồng hồ km'"
+        ],
+        "giai_thich": "Tỷ lệ km 0,51 < 0,6 và không nghi chỉnh đồng hồ → nhân 1,04.",
+        "gia_truoc": 760.24,
+        "gia_sau": 790.6496000000001,
+        "he_so": 1.04,
+        "thay_doi": 30.40960000000007,
+        "du_kien_moi": {},
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 6,
+        "ma_luat": "R14",
+        "nhom": "TINH_TRANG",
+        "ten": "Tình trạng rất tốt",
+        "uu_tien": 60,
+        "tap_xung_dot": [
+          "R14",
+          "R17",
+          "R23"
+        ],
+        "dieu_kien_thoa": [
+          "tình trạng = Rất tốt"
+        ],
+        "giai_thich": "Tình trạng Rất tốt → nhân 1,04.",
+        "gia_truoc": 790.6496000000001,
+        "gia_sau": 822.2755840000001,
+        "he_so": 1.04,
+        "thay_doi": 31.625984000000017,
+        "du_kien_moi": {},
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 7,
+        "ma_luat": "R17",
+        "nhom": "LICH_SU",
+        "ten": "Bảo dưỡng định kỳ tại hãng",
+        "uu_tien": 50,
+        "tap_xung_dot": [
+          "R17",
+          "R23"
+        ],
+        "dieu_kien_thoa": [
+          "bảo dưỡng hãng = có"
+        ],
+        "giai_thich": "Có lịch sử bảo dưỡng tại hãng → nhân 1,03.",
+        "gia_truoc": 822.2755840000001,
+        "gia_sau": 846.9438515200001,
+        "he_so": 1.03,
+        "thay_doi": 24.668267519999972,
+        "du_kien_moi": {},
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 8,
+        "ma_luat": "R23",
+        "nhom": "THUONG_HIEU",
+        "ten": "Thương hiệu giữ giá cao",
+        "uu_tien": 40,
+        "tap_xung_dot": [
+          "R23"
+        ],
+        "dieu_kien_thoa": [
+          "nhóm giữ giá = cao"
+        ],
+        "giai_thich": "Hãng Honda thuộc nhóm giữ giá cao (khung hãng) → nhân 1,05.",
+        "gia_truoc": 846.9438515200001,
+        "gia_sau": 889.2910440960001,
+        "he_so": 1.05,
+        "thay_doi": 42.347192576,
+        "du_kien_moi": {},
+        "canh_bao": [],
+        "ghi_chu": ""
+      }
+    ],
+    "canh_bao": [],
+    "xe_tuong_tu": [
+      {
+        "ma_tin": "MP00717",
+        "phien_ban_id": "honda-crv-15l",
+        "ten_xe": "Honda CR-V 1.5L",
+        "nam_sx": 2021,
+        "so_km": 40100.0,
+        "khu_vuc": "Miền Nam",
+        "tinh_trang": "Rất tốt",
+        "bao_duong_hang": false,
+        "chay_dich_vu": false,
+        "ngap_nuoc": false,
+        "tai_nan_nang": false,
+        "gia_goc": 790.0,
+        "gia_luat_ca": 863.3893632000002,
+        "ty_le_hieu_chinh": 1.0299999999999998,
+        "gia_hieu_chinh": 813.6999999999998,
+        "do_tuong_tu": 0.94685,
+        "tuong_tu_cuc_bo": {
+          "phien_ban": 1.0,
+          "nam_sx": 1.0,
+          "so_km": 0.979,
+          "tinh_trang": 1.0,
+          "khu_vuc": 1.0,
+          "lich_su": 0.5,
+          "rui_ro": 1.0
+        }
+      },
+      {
+        "ma_tin": "MP02304",
+        "phien_ban_id": "honda-crv-15l",
+        "ten_xe": "Honda CR-V 1.5L",
+        "nam_sx": 2021,
+        "so_km": 48400.0,
+        "khu_vuc": "Miền Bắc",
+        "tinh_trang": "Tốt",
+        "bao_duong_hang": true,
+        "chay_dich_vu": false,
+        "ngap_nuoc": false,
+        "tai_nan_nang": false,
+        "gia_goc": 952.0,
+        "gia_luat_ca": 822.19956,
+        "ty_le_hieu_chinh": 1.0816000000000001,
+        "gia_hieu_chinh": 1029.6832000000002,
+        "do_tuong_tu": 0.9310666666666666,
+        "tuong_tu_cuc_bo": {
+          "phien_ban": 1.0,
+          "nam_sx": 1.0,
+          "so_km": 0.896,
+          "tinh_trang": 0.6666666666666667,
+          "khu_vuc": 0.6,
+          "lich_su": 1.0,
+          "rui_ro": 1.0
+        }
+      },
+      {
+        "ma_tin": "MP00186",
+        "phien_ban_id": "honda-crv-15l",
+        "ten_xe": "Honda CR-V 1.5L",
+        "nam_sx": 2021,
+        "so_km": 58900.0,
+        "khu_vuc": "Miền Bắc",
+        "tinh_trang": "Tốt",
+        "bao_duong_hang": true,
+        "chay_dich_vu": false,
+        "ngap_nuoc": false,
+        "tai_nan_nang": false,
+        "gia_goc": 828.0,
+        "gia_luat_ca": 822.19956,
+        "ty_le_hieu_chinh": 1.0816000000000001,
+        "gia_hieu_chinh": 895.5648000000001,
+        "do_tuong_tu": 0.9153166666666667,
+        "tuong_tu_cuc_bo": {
+          "phien_ban": 1.0,
+          "nam_sx": 1.0,
+          "so_km": 0.791,
+          "tinh_trang": 0.6666666666666667,
+          "khu_vuc": 0.6,
+          "lich_su": 1.0,
+          "rui_ro": 1.0
+        }
+      },
+      {
+        "ma_tin": "MP02608",
+        "phien_ban_id": "honda-crv-15l",
+        "ten_xe": "Honda CR-V 1.5L",
+        "nam_sx": 2021,
+        "so_km": 64600.0,
+        "khu_vuc": "Miền Trung",
+        "tinh_trang": "Tốt",
+        "bao_duong_hang": true,
+        "chay_dich_vu": false,
+        "ngap_nuoc": false,
+        "tai_nan_nang": false,
+        "gia_goc": 755.0,
+        "gia_luat_ca": 822.19956,
+        "ty_le_hieu_chinh": 1.0816000000000001,
+        "gia_hieu_chinh": 816.6080000000001,
+        "do_tuong_tu": 0.9067666666666666,
+        "tuong_tu_cuc_bo": {
+          "phien_ban": 1.0,
+          "nam_sx": 1.0,
+          "so_km": 0.734,
+          "tinh_trang": 0.6666666666666667,
+          "khu_vuc": 0.6,
+          "lich_su": 1.0,
+          "rui_ro": 1.0
+        }
+      },
+      {
+        "ma_tin": "MP01339",
+        "phien_ban_id": "honda-crv-15l",
+        "ten_xe": "Honda CR-V 1.5L",
+        "nam_sx": 2020,
+        "so_km": 48300.0,
+        "khu_vuc": "Miền Nam",
+        "tinh_trang": "Tốt",
+        "bao_duong_hang": true,
+        "chay_dich_vu": false,
+        "ngap_nuoc": false,
+        "tai_nan_nang": false,
+        "gia_goc": 810.0,
+        "gia_luat_ca": 716.7645576000001,
+        "ty_le_hieu_chinh": 1.2407017543859649,
+        "gia_hieu_chinh": 1004.9684210526316,
+        "do_tuong_tu": 0.9012166666666667,
+        "tuong_tu_cuc_bo": {
+          "phien_ban": 1.0,
+          "nam_sx": 0.75,
+          "so_km": 0.897,
+          "tinh_trang": 0.6666666666666667,
+          "khu_vuc": 1.0,
+          "lich_su": 1.0,
+          "rui_ro": 1.0
+        }
+      }
+    ],
+    "thoi_gian_ms": 2.616920000036771,
+    "id": "TC02",
+    "ten": "Xe bảo dưỡng hãng, đi ít",
+    "mo_ta": "Honda CR-V 1.5L đời 2021, 38.000 km, rất tốt, bảo dưỡng hãng đầy đủ.",
+    "can_cu_hieu_chinh": [
+      [
+        {
+          "nhom": "GIA_MOI",
+          "yeu_to": "Giá xe mới tham chiếu",
+          "xe_can_dinh_gia": 1118.0,
+          "xe_so_sanh": 1118.0,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TUOI_XE",
+          "yeu_to": "Tuổi xe",
+          "xe_can_dinh_gia": 0.68,
+          "xe_so_sanh": 0.68,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "SO_KM",
+          "yeu_to": "Số km",
+          "xe_can_dinh_gia": 1.04,
+          "xe_so_sanh": 1.04,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TINH_TRANG",
+          "yeu_to": "Tình trạng",
+          "xe_can_dinh_gia": 1.04,
+          "xe_so_sanh": 1.04,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "LICH_SU",
+          "yeu_to": "Lịch sử sử dụng/bảo dưỡng",
+          "xe_can_dinh_gia": 1.03,
+          "xe_so_sanh": 1.0,
+          "ty_so": 1.03
+        },
+        {
+          "nhom": "THUONG_HIEU",
+          "yeu_to": "Thương hiệu",
+          "xe_can_dinh_gia": 1.05,
+          "xe_so_sanh": 1.05,
+          "ty_so": 1.0
+        }
+      ],
+      [
+        {
+          "nhom": "GIA_MOI",
+          "yeu_to": "Giá xe mới tham chiếu",
+          "xe_can_dinh_gia": 1118.0,
+          "xe_so_sanh": 1118.0,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TUOI_XE",
+          "yeu_to": "Tuổi xe",
+          "xe_can_dinh_gia": 0.68,
+          "xe_so_sanh": 0.68,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "SO_KM",
+          "yeu_to": "Số km",
+          "xe_can_dinh_gia": 1.04,
+          "xe_so_sanh": 1.0,
+          "ty_so": 1.04
+        },
+        {
+          "nhom": "TINH_TRANG",
+          "yeu_to": "Tình trạng",
+          "xe_can_dinh_gia": 1.04,
+          "xe_so_sanh": 1.0,
+          "ty_so": 1.04
+        },
+        {
+          "nhom": "LICH_SU",
+          "yeu_to": "Lịch sử sử dụng/bảo dưỡng",
+          "xe_can_dinh_gia": 1.03,
+          "xe_so_sanh": 1.03,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "THUONG_HIEU",
+          "yeu_to": "Thương hiệu",
+          "xe_can_dinh_gia": 1.05,
+          "xe_so_sanh": 1.05,
+          "ty_so": 1.0
+        }
+      ],
+      [
+        {
+          "nhom": "GIA_MOI",
+          "yeu_to": "Giá xe mới tham chiếu",
+          "xe_can_dinh_gia": 1118.0,
+          "xe_so_sanh": 1118.0,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TUOI_XE",
+          "yeu_to": "Tuổi xe",
+          "xe_can_dinh_gia": 0.68,
+          "xe_so_sanh": 0.68,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "SO_KM",
+          "yeu_to": "Số km",
+          "xe_can_dinh_gia": 1.04,
+          "xe_so_sanh": 1.0,
+          "ty_so": 1.04
+        },
+        {
+          "nhom": "TINH_TRANG",
+          "yeu_to": "Tình trạng",
+          "xe_can_dinh_gia": 1.04,
+          "xe_so_sanh": 1.0,
+          "ty_so": 1.04
+        },
+        {
+          "nhom": "LICH_SU",
+          "yeu_to": "Lịch sử sử dụng/bảo dưỡng",
+          "xe_can_dinh_gia": 1.03,
+          "xe_so_sanh": 1.03,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "THUONG_HIEU",
+          "yeu_to": "Thương hiệu",
+          "xe_can_dinh_gia": 1.05,
+          "xe_so_sanh": 1.05,
+          "ty_so": 1.0
+        }
+      ],
+      [
+        {
+          "nhom": "GIA_MOI",
+          "yeu_to": "Giá xe mới tham chiếu",
+          "xe_can_dinh_gia": 1118.0,
+          "xe_so_sanh": 1118.0,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TUOI_XE",
+          "yeu_to": "Tuổi xe",
+          "xe_can_dinh_gia": 0.68,
+          "xe_so_sanh": 0.68,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "SO_KM",
+          "yeu_to": "Số km",
+          "xe_can_dinh_gia": 1.04,
+          "xe_so_sanh": 1.0,
+          "ty_so": 1.04
+        },
+        {
+          "nhom": "TINH_TRANG",
+          "yeu_to": "Tình trạng",
+          "xe_can_dinh_gia": 1.04,
+          "xe_so_sanh": 1.0,
+          "ty_so": 1.04
+        },
+        {
+          "nhom": "LICH_SU",
+          "yeu_to": "Lịch sử sử dụng/bảo dưỡng",
+          "xe_can_dinh_gia": 1.03,
+          "xe_so_sanh": 1.03,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "THUONG_HIEU",
+          "yeu_to": "Thương hiệu",
+          "xe_can_dinh_gia": 1.05,
+          "xe_so_sanh": 1.05,
+          "ty_so": 1.0
+        }
+      ],
+      [
+        {
+          "nhom": "GIA_MOI",
+          "yeu_to": "Giá xe mới tham chiếu",
+          "xe_can_dinh_gia": 1118.0,
+          "xe_so_sanh": 1118.0,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TUOI_XE",
+          "yeu_to": "Tuổi xe",
+          "xe_can_dinh_gia": 0.68,
+          "xe_so_sanh": 0.57,
+          "ty_so": 1.192982456140351
+        },
+        {
+          "nhom": "SO_KM",
+          "yeu_to": "Số km",
+          "xe_can_dinh_gia": 1.04,
+          "xe_so_sanh": 1.04,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TINH_TRANG",
+          "yeu_to": "Tình trạng",
+          "xe_can_dinh_gia": 1.04,
+          "xe_so_sanh": 1.0,
+          "ty_so": 1.04
+        },
+        {
+          "nhom": "LICH_SU",
+          "yeu_to": "Lịch sử sử dụng/bảo dưỡng",
+          "xe_can_dinh_gia": 1.03,
+          "xe_so_sanh": 1.03,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "THUONG_HIEU",
+          "yeu_to": "Thương hiệu",
+          "xe_can_dinh_gia": 1.05,
+          "xe_so_sanh": 1.05,
+          "ty_so": 1.0
+        }
+      ]
+    ]
+  },
+  {
+    "dau_vao": {
+      "phien_ban": "hyundai-accent-14at",
+      "nam_sx": 2020,
+      "so_km": 62000,
+      "khu_vuc": "Miền Bắc",
+      "tinh_trang": "Trung bình",
+      "bao_duong_hang": false,
+      "chay_dich_vu": false,
+      "ngap_nuoc": true,
+      "tai_nan_nang": false
+    },
+    "hop_le": true,
+    "xe": "Hyundai Accent 1.4 AT",
+    "phan_khuc": "B",
+    "gia_moi": 501.0,
+    "gia_luat": 183.90707999999998,
+    "gia_cbr": 193.29765315912982,
+    "gia_de_xuat": 190.35407157590478,
+    "w_cbr": 0.6865386666666669,
+    "alpha": 0.31346133333333315,
+    "n_xe_tuong_tu": 5,
+    "sim_tb": 0.8581733333333335,
+    "cv": 0.05374287431145232,
+    "d": 0.04933213711368027,
+    "delta": 0.13,
+    "khoang_thap": 165.60804227103716,
+    "khoang_cao": 215.10010088077237,
+    "muc_tin_cay": "Thấp",
+    "ly_do_tin_cay": [
+      "Có cảnh báo rủi ro nghiêm trọng (ngập nước/tai nạn nặng)."
+    ],
+    "trang_thai_cbr": "du_du_lieu",
+    "ly_do_cbr": "",
+    "so_ung_vien_cbr": 518,
+    "so_dat_nguong_cbr": 29,
+    "luat_kich_hoat": [
+      "R01",
+      "R02",
+      "R03",
+      "R20",
+      "R07",
+      "R15"
+    ],
+    "vet": [
+      {
+        "chu_ky": 1,
+        "ma_luat": "R01",
+        "nhom": "DAN_XUAT",
+        "ten": "Tính tuổi xe",
+        "uu_tien": 100,
+        "tap_xung_dot": [
+          "R01",
+          "R03"
+        ],
+        "dieu_kien_thoa": [
+          "năm sản xuất đã biết (2020)"
+        ],
+        "giai_thich": "Tuổi xe = 2026 − 2020 = 6 năm.",
+        "gia_truoc": null,
+        "gia_sau": null,
+        "he_so": null,
+        "thay_doi": null,
+        "du_kien_moi": {
+          "tuoi_xe": 6
+        },
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 2,
+        "ma_luat": "R02",
+        "nhom": "DAN_XUAT",
+        "ten": "Tính tỷ lệ km so với chuẩn",
+        "uu_tien": 99,
+        "tap_xung_dot": [
+          "R02",
+          "R03"
+        ],
+        "dieu_kien_thoa": [
+          "tuổi xe đã biết (6)",
+          "số km đã biết (62.000)"
+        ],
+        "giai_thich": "Km chuẩn = 15.000 × max(1, 6) = 90.000 km; tỷ lệ km = 62.000 / 90.000 = 0,69.",
+        "gia_truoc": null,
+        "gia_sau": null,
+        "he_so": null,
+        "thay_doi": null,
+        "du_kien_moi": {
+          "km_chuan": 90000.0,
+          "ty_le_km": 0.6888888888888889
+        },
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 3,
+        "ma_luat": "R03",
+        "nhom": "KHOI_TAO",
+        "ten": "Khởi tạo giá từ giá xe mới",
+        "uu_tien": 98,
+        "tap_xung_dot": [
+          "R03"
+        ],
+        "dieu_kien_thoa": [
+          "giá xe mới = 501 > 0"
+        ],
+        "giai_thich": "Giá xuất phát = giá xe mới tham chiếu 501 triệu (khung phiên bản).",
+        "gia_truoc": null,
+        "gia_sau": 501.0,
+        "he_so": null,
+        "thay_doi": null,
+        "du_kien_moi": {
+          "gia": 501.0
+        },
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 4,
+        "ma_luat": "R20",
+        "nhom": "RUI_RO",
+        "ten": "Xe từng ngập nước",
+        "uu_tien": 92,
+        "tap_xung_dot": [
+          "R20",
+          "R07",
+          "R15",
+          "R25"
+        ],
+        "dieu_kien_thoa": [
+          "ngập nước = có"
+        ],
+        "giai_thich": "Xe từng ngập nước → nhân 0,70.",
+        "gia_truoc": 501.0,
+        "gia_sau": 350.7,
+        "he_so": 0.7,
+        "thay_doi": -150.3,
+        "du_kien_moi": {},
+        "canh_bao": [
+          {
+            "ma_luat": "R20",
+            "muc": "nghiem_trong",
+            "noi_dung": "Xe từng ngập nước: kiểm tra hệ thống điện, cảm biến, sàn xe; giá giảm mạnh và biến động lớn."
+          }
+        ],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 5,
+        "ma_luat": "R07",
+        "nhom": "TUOI_XE",
+        "ten": "Khấu hao xe 6–8 năm",
+        "uu_tien": 80,
+        "tap_xung_dot": [
+          "R07",
+          "R15"
+        ],
+        "dieu_kien_thoa": [
+          "tuổi xe = 6 ≥ 6",
+          "tuổi xe = 6 ≤ 8"
+        ],
+        "giai_thich": "Xe 6 năm tuổi (nhóm 6–8 năm) → nhân 0,57.",
+        "gia_truoc": 350.7,
+        "gia_sau": 199.89899999999997,
+        "he_so": 0.57,
+        "thay_doi": -150.80100000000002,
+        "du_kien_moi": {},
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 6,
+        "ma_luat": "R15",
+        "nhom": "TINH_TRANG",
+        "ten": "Tình trạng trung bình",
+        "uu_tien": 60,
+        "tap_xung_dot": [
+          "R15"
+        ],
+        "dieu_kien_thoa": [
+          "tình trạng = Trung bình"
+        ],
+        "giai_thich": "Tình trạng Trung bình → nhân 0,92.",
+        "gia_truoc": 199.89899999999997,
+        "gia_sau": 183.90707999999998,
+        "he_so": 0.92,
+        "thay_doi": -15.991919999999993,
+        "du_kien_moi": {},
+        "canh_bao": [],
+        "ghi_chu": ""
+      }
+    ],
+    "canh_bao": [
+      {
+        "ma_luat": "R20",
+        "muc": "nghiem_trong",
+        "noi_dung": "Xe từng ngập nước: kiểm tra hệ thống điện, cảm biến, sàn xe; giá giảm mạnh và biến động lớn."
+      }
+    ],
+    "xe_tuong_tu": [
+      {
+        "ma_tin": "MP01628",
+        "phien_ban_id": "hyundai-accent-14at",
+        "ten_xe": "Hyundai Accent 1.4 AT",
+        "nam_sx": 2020,
+        "so_km": 108900.0,
+        "khu_vuc": "Miền Bắc",
+        "tinh_trang": "Trung bình",
+        "bao_duong_hang": false,
+        "chay_dich_vu": false,
+        "ngap_nuoc": false,
+        "tai_nan_nang": false,
+        "gia_goc": 254.0,
+        "gia_luat_ca": 262.7244,
+        "ty_le_hieu_chinh": 0.7,
+        "gia_hieu_chinh": 177.79999999999998,
+        "do_tuong_tu": 0.87965,
+        "tuong_tu_cuc_bo": {
+          "phien_ban": 1.0,
+          "nam_sx": 1.0,
+          "so_km": 0.531,
+          "tinh_trang": 1.0,
+          "khu_vuc": 1.0,
+          "lich_su": 1.0,
+          "rui_ro": 0.5
+        }
+      },
+      {
+        "ma_tin": "MP01079",
+        "phien_ban_id": "hyundai-accent-14at",
+        "ten_xe": "Hyundai Accent 1.4 AT",
+        "nam_sx": 2019,
+        "so_km": 51400.0,
+        "khu_vuc": "Miền Nam",
+        "tinh_trang": "Trung bình",
+        "bao_duong_hang": false,
+        "chay_dich_vu": false,
+        "ngap_nuoc": false,
+        "tai_nan_nang": false,
+        "gia_goc": 296.0,
+        "gia_luat_ca": 273.233376,
+        "ty_le_hieu_chinh": 0.6730769230769229,
+        "gia_hieu_chinh": 199.23076923076917,
+        "do_tuong_tu": 0.8641000000000001,
+        "tuong_tu_cuc_bo": {
+          "phien_ban": 1.0,
+          "nam_sx": 0.75,
+          "so_km": 0.894,
+          "tinh_trang": 1.0,
+          "khu_vuc": 0.6,
+          "lich_su": 1.0,
+          "rui_ro": 0.5
+        }
+      },
+      {
+        "ma_tin": "MP00465",
+        "phien_ban_id": "hyundai-accent-14at-db",
+        "ten_xe": "Hyundai Accent 1.4 AT Đặc biệt",
+        "nam_sx": 2020,
+        "so_km": 70700.0,
+        "khu_vuc": "Miền Bắc",
+        "tinh_trang": "Trung bình",
+        "bao_duong_hang": false,
+        "chay_dich_vu": false,
+        "ngap_nuoc": false,
+        "tai_nan_nang": false,
+        "gia_goc": 313.0,
+        "gia_luat_ca": 284.2248,
+        "ty_le_hieu_chinh": 0.6470479704797046,
+        "gia_hieu_chinh": 202.52601476014755,
+        "do_tuong_tu": 0.86195,
+        "tuong_tu_cuc_bo": {
+          "phien_ban": 0.75,
+          "nam_sx": 1.0,
+          "so_km": 0.913,
+          "tinh_trang": 1.0,
+          "khu_vuc": 1.0,
+          "lich_su": 1.0,
+          "rui_ro": 0.5
+        }
+      },
+      {
+        "ma_tin": "MP02534",
+        "phien_ban_id": "hyundai-accent-14at",
+        "ten_xe": "Hyundai Accent 1.4 AT",
+        "nam_sx": 2021,
+        "so_km": 77100.0,
+        "khu_vuc": "Miền Bắc",
+        "tinh_trang": "Tốt",
+        "bao_duong_hang": false,
+        "chay_dich_vu": false,
+        "ngap_nuoc": false,
+        "tai_nan_nang": false,
+        "gia_goc": 376.0,
+        "gia_luat_ca": 340.68,
+        "ty_le_hieu_chinh": 0.5398235294117646,
+        "gia_hieu_chinh": 202.97364705882347,
+        "do_tuong_tu": 0.8440166666666667,
+        "tuong_tu_cuc_bo": {
+          "phien_ban": 1.0,
+          "nam_sx": 0.75,
+          "so_km": 0.849,
+          "tinh_trang": 0.6666666666666667,
+          "khu_vuc": 1.0,
+          "lich_su": 1.0,
+          "rui_ro": 0.5
+        }
+      },
+      {
+        "ma_tin": "MP03034",
+        "phien_ban_id": "hyundai-accent-14at",
+        "ten_xe": "Hyundai Accent 1.4 AT",
+        "nam_sx": 2022,
+        "so_km": 67900.0,
+        "khu_vuc": "Miền Bắc",
+        "tinh_trang": "Trung bình",
+        "bao_duong_hang": false,
+        "chay_dich_vu": false,
+        "ngap_nuoc": false,
+        "tai_nan_nang": false,
+        "gia_goc": 314.0,
+        "gia_luat_ca": 313.42560000000003,
+        "ty_le_hieu_chinh": 0.5867647058823529,
+        "gia_hieu_chinh": 184.2441176470588,
+        "do_tuong_tu": 0.8411500000000001,
+        "tuong_tu_cuc_bo": {
+          "phien_ban": 1.0,
+          "nam_sx": 0.5,
+          "so_km": 0.9410000000000001,
+          "tinh_trang": 1.0,
+          "khu_vuc": 1.0,
+          "lich_su": 1.0,
+          "rui_ro": 0.5
+        }
+      }
+    ],
+    "thoi_gian_ms": 1.7233029998351412,
+    "id": "TC03",
+    "ten": "Xe từng ngập nước",
+    "mo_ta": "Hyundai Accent 1.4 AT đời 2020, 62.000 km, từng ngập nước.",
+    "can_cu_hieu_chinh": [
+      [
+        {
+          "nhom": "GIA_MOI",
+          "yeu_to": "Giá xe mới tham chiếu",
+          "xe_can_dinh_gia": 501.0,
+          "xe_so_sanh": 501.0,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TUOI_XE",
+          "yeu_to": "Tuổi xe",
+          "xe_can_dinh_gia": 0.57,
+          "xe_so_sanh": 0.57,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TINH_TRANG",
+          "yeu_to": "Tình trạng",
+          "xe_can_dinh_gia": 0.92,
+          "xe_so_sanh": 0.92,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "RUI_RO",
+          "yeu_to": "Rủi ro nghiêm trọng",
+          "xe_can_dinh_gia": 0.7,
+          "xe_so_sanh": 1.0,
+          "ty_so": 0.7
+        }
+      ],
+      [
+        {
+          "nhom": "GIA_MOI",
+          "yeu_to": "Giá xe mới tham chiếu",
+          "xe_can_dinh_gia": 501.0,
+          "xe_so_sanh": 501.0,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TUOI_XE",
+          "yeu_to": "Tuổi xe",
+          "xe_can_dinh_gia": 0.57,
+          "xe_so_sanh": 0.57,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "SO_KM",
+          "yeu_to": "Số km",
+          "xe_can_dinh_gia": 1.0,
+          "xe_so_sanh": 1.04,
+          "ty_so": 0.9615384615384615
+        },
+        {
+          "nhom": "TINH_TRANG",
+          "yeu_to": "Tình trạng",
+          "xe_can_dinh_gia": 0.92,
+          "xe_so_sanh": 0.9200000000000002,
+          "ty_so": 0.9999999999999999
+        },
+        {
+          "nhom": "RUI_RO",
+          "yeu_to": "Rủi ro nghiêm trọng",
+          "xe_can_dinh_gia": 0.7,
+          "xe_so_sanh": 1.0,
+          "ty_so": 0.7
+        }
+      ],
+      [
+        {
+          "nhom": "GIA_MOI",
+          "yeu_to": "Giá xe mới tham chiếu",
+          "xe_can_dinh_gia": 501.0,
+          "xe_so_sanh": 542.0,
+          "ty_so": 0.9243542435424354
+        },
+        {
+          "nhom": "TUOI_XE",
+          "yeu_to": "Tuổi xe",
+          "xe_can_dinh_gia": 0.57,
+          "xe_so_sanh": 0.57,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TINH_TRANG",
+          "yeu_to": "Tình trạng",
+          "xe_can_dinh_gia": 0.92,
+          "xe_so_sanh": 0.92,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "RUI_RO",
+          "yeu_to": "Rủi ro nghiêm trọng",
+          "xe_can_dinh_gia": 0.7,
+          "xe_so_sanh": 1.0,
+          "ty_so": 0.7
+        }
+      ],
+      [
+        {
+          "nhom": "GIA_MOI",
+          "yeu_to": "Giá xe mới tham chiếu",
+          "xe_can_dinh_gia": 501.0,
+          "xe_so_sanh": 501.0,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TUOI_XE",
+          "yeu_to": "Tuổi xe",
+          "xe_can_dinh_gia": 0.57,
+          "xe_so_sanh": 0.68,
+          "ty_so": 0.838235294117647
+        },
+        {
+          "nhom": "TINH_TRANG",
+          "yeu_to": "Tình trạng",
+          "xe_can_dinh_gia": 0.92,
+          "xe_so_sanh": 1.0,
+          "ty_so": 0.92
+        },
+        {
+          "nhom": "RUI_RO",
+          "yeu_to": "Rủi ro nghiêm trọng",
+          "xe_can_dinh_gia": 0.7,
+          "xe_so_sanh": 1.0,
+          "ty_so": 0.7
+        }
+      ],
+      [
+        {
+          "nhom": "GIA_MOI",
+          "yeu_to": "Giá xe mới tham chiếu",
+          "xe_can_dinh_gia": 501.0,
+          "xe_so_sanh": 501.0,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TUOI_XE",
+          "yeu_to": "Tuổi xe",
+          "xe_can_dinh_gia": 0.57,
+          "xe_so_sanh": 0.68,
+          "ty_so": 0.838235294117647
+        },
+        {
+          "nhom": "TINH_TRANG",
+          "yeu_to": "Tình trạng",
+          "xe_can_dinh_gia": 0.92,
+          "xe_so_sanh": 0.92,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "RUI_RO",
+          "yeu_to": "Rủi ro nghiêm trọng",
+          "xe_can_dinh_gia": 0.7,
+          "xe_so_sanh": 1.0,
+          "ty_so": 0.7
+        }
+      ]
+    ]
+  },
+  {
+    "dau_vao": {
+      "phien_ban": "toyota-innova-20e-mt",
+      "nam_sx": 2018,
+      "so_km": 230000,
+      "khu_vuc": "Miền Nam",
+      "tinh_trang": "Trung bình",
+      "bao_duong_hang": false,
+      "chay_dich_vu": true,
+      "ngap_nuoc": false,
+      "tai_nan_nang": false
+    },
+    "hop_le": true,
+    "xe": "Toyota Innova 2.0E MT",
+    "phan_khuc": "MPV",
+    "gia_moi": 755.0,
+    "gia_luat": 312.5667992832,
+    "gia_cbr": 330.0501196973614,
+    "gia_de_xuat": 324.20686765963427,
+    "w_cbr": 0.6657813333333334,
+    "alpha": 0.33421866666666655,
+    "n_xe_tuong_tu": 5,
+    "sim_tb": 0.8322266666666668,
+    "cv": 0.06552807013537014,
+    "d": 0.05392643450266493,
+    "delta": 0.1,
+    "khoang_thap": 291.78618089367086,
+    "khoang_cao": 356.62755442559774,
+    "muc_tin_cay": "Trung bình",
+    "ly_do_tin_cay": [
+      "Sim TB 0,832 < 0,85.",
+      "Có cảnh báo mức chú ý cần kiểm tra thêm."
+    ],
+    "trang_thai_cbr": "du_du_lieu",
+    "ly_do_cbr": "",
+    "so_ung_vien_cbr": 163,
+    "so_dat_nguong_cbr": 17,
+    "luat_kich_hoat": [
+      "R01",
+      "R02",
+      "R03",
+      "R07",
+      "R12",
+      "R15",
+      "R19",
+      "R18",
+      "R23"
+    ],
+    "vet": [
+      {
+        "chu_ky": 1,
+        "ma_luat": "R01",
+        "nhom": "DAN_XUAT",
+        "ten": "Tính tuổi xe",
+        "uu_tien": 100,
+        "tap_xung_dot": [
+          "R01",
+          "R03"
+        ],
+        "dieu_kien_thoa": [
+          "năm sản xuất đã biết (2018)"
+        ],
+        "giai_thich": "Tuổi xe = 2026 − 2018 = 8 năm.",
+        "gia_truoc": null,
+        "gia_sau": null,
+        "he_so": null,
+        "thay_doi": null,
+        "du_kien_moi": {
+          "tuoi_xe": 8
+        },
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 2,
+        "ma_luat": "R02",
+        "nhom": "DAN_XUAT",
+        "ten": "Tính tỷ lệ km so với chuẩn",
+        "uu_tien": 99,
+        "tap_xung_dot": [
+          "R02",
+          "R03"
+        ],
+        "dieu_kien_thoa": [
+          "tuổi xe đã biết (8)",
+          "số km đã biết (230.000)"
+        ],
+        "giai_thich": "Km chuẩn = 15.000 × max(1, 8) = 120.000 km; tỷ lệ km = 230.000 / 120.000 = 1,92.",
+        "gia_truoc": null,
+        "gia_sau": null,
+        "he_so": null,
+        "thay_doi": null,
+        "du_kien_moi": {
+          "km_chuan": 120000.0,
+          "ty_le_km": 1.9166666666666667
+        },
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 3,
+        "ma_luat": "R03",
+        "nhom": "KHOI_TAO",
+        "ten": "Khởi tạo giá từ giá xe mới",
+        "uu_tien": 98,
+        "tap_xung_dot": [
+          "R03"
+        ],
+        "dieu_kien_thoa": [
+          "giá xe mới = 755 > 0"
+        ],
+        "giai_thich": "Giá xuất phát = giá xe mới tham chiếu 755 triệu (khung phiên bản).",
+        "gia_truoc": null,
+        "gia_sau": 755.0,
+        "he_so": null,
+        "thay_doi": null,
+        "du_kien_moi": {
+          "gia": 755.0
+        },
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 4,
+        "ma_luat": "R07",
+        "nhom": "TUOI_XE",
+        "ten": "Khấu hao xe 6–8 năm",
+        "uu_tien": 80,
+        "tap_xung_dot": [
+          "R07",
+          "R12",
+          "R15",
+          "R19",
+          "R18",
+          "R23",
+          "R25"
+        ],
+        "dieu_kien_thoa": [
+          "tuổi xe = 8 ≥ 6",
+          "tuổi xe = 8 ≤ 8"
+        ],
+        "giai_thich": "Xe 8 năm tuổi (nhóm 6–8 năm) → nhân 0,57.",
+        "gia_truoc": 755.0,
+        "gia_sau": 430.34999999999997,
+        "he_so": 0.57,
+        "thay_doi": -324.65000000000003,
+        "du_kien_moi": {},
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 5,
+        "ma_luat": "R12",
+        "nhom": "SO_KM",
+        "ten": "Xe đi rất nhiều",
+        "uu_tien": 70,
+        "tap_xung_dot": [
+          "R12",
+          "R15",
+          "R19",
+          "R18",
+          "R23"
+        ],
+        "dieu_kien_thoa": [
+          "tỷ lệ km = 1,92 ≥ 1,80"
+        ],
+        "giai_thich": "Tỷ lệ km 1,92 ≥ 1,8 → nhân 0,89.",
+        "gia_truoc": 430.34999999999997,
+        "gia_sau": 383.01149999999996,
+        "he_so": 0.89,
+        "thay_doi": -47.33850000000001,
+        "du_kien_moi": {},
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 6,
+        "ma_luat": "R15",
+        "nhom": "TINH_TRANG",
+        "ten": "Tình trạng trung bình",
+        "uu_tien": 60,
+        "tap_xung_dot": [
+          "R15",
+          "R19",
+          "R18",
+          "R23"
+        ],
+        "dieu_kien_thoa": [
+          "tình trạng = Trung bình"
+        ],
+        "giai_thich": "Tình trạng Trung bình → nhân 0,92.",
+        "gia_truoc": 383.01149999999996,
+        "gia_sau": 352.37057999999996,
+        "he_so": 0.92,
+        "thay_doi": -30.640919999999994,
+        "du_kien_moi": {},
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 7,
+        "ma_luat": "R19",
+        "nhom": "LICH_SU",
+        "ten": "Từng chạy dịch vụ",
+        "uu_tien": 55,
+        "tap_xung_dot": [
+          "R19",
+          "R18",
+          "R23"
+        ],
+        "dieu_kien_thoa": [
+          "chạy dịch vụ = có"
+        ],
+        "giai_thich": "Xe từng chạy dịch vụ → nhân 0,88.",
+        "gia_truoc": 352.37057999999996,
+        "gia_sau": 310.0861104,
+        "he_so": 0.88,
+        "thay_doi": -42.284469599999966,
+        "du_kien_moi": {},
+        "canh_bao": [
+          {
+            "ma_luat": "R19",
+            "muc": "chu_y",
+            "noi_dung": "Xe từng chạy dịch vụ: hao mòn nội thất, hộp số, hệ thống treo thường cao hơn xe gia đình."
+          }
+        ],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 8,
+        "ma_luat": "R18",
+        "nhom": "DAC_DIEM",
+        "ten": "Hộp số sàn",
+        "uu_tien": 50,
+        "tap_xung_dot": [
+          "R18",
+          "R23"
+        ],
+        "dieu_kien_thoa": [
+          "hộp số = MT"
+        ],
+        "giai_thich": "Phiên bản dùng hộp số MT (từ khung) → nhân 0,96.",
+        "gia_truoc": 310.0861104,
+        "gia_sau": 297.682665984,
+        "he_so": 0.96,
+        "thay_doi": -12.403444416000013,
+        "du_kien_moi": {},
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 9,
+        "ma_luat": "R23",
+        "nhom": "THUONG_HIEU",
+        "ten": "Thương hiệu giữ giá cao",
+        "uu_tien": 40,
+        "tap_xung_dot": [
+          "R23"
+        ],
+        "dieu_kien_thoa": [
+          "nhóm giữ giá = cao"
+        ],
+        "giai_thich": "Hãng Toyota thuộc nhóm giữ giá cao (khung hãng) → nhân 1,05.",
+        "gia_truoc": 297.682665984,
+        "gia_sau": 312.5667992832,
+        "he_so": 1.05,
+        "thay_doi": 14.884133299200016,
+        "du_kien_moi": {},
+        "canh_bao": [],
+        "ghi_chu": ""
+      }
+    ],
+    "canh_bao": [
+      {
+        "ma_luat": "R19",
+        "muc": "chu_y",
+        "noi_dung": "Xe từng chạy dịch vụ: hao mòn nội thất, hộp số, hệ thống treo thường cao hơn xe gia đình."
+      }
+    ],
+    "xe_tuong_tu": [
+      {
+        "ma_tin": "MP00911",
+        "phien_ban_id": "toyota-innova-20e-mt",
+        "ten_xe": "Toyota Innova 2.0E MT",
+        "nam_sx": 2019,
+        "so_km": 258000.0,
+        "khu_vuc": "Miền Bắc",
+        "tinh_trang": "Tốt",
+        "bao_duong_hang": false,
+        "chay_dich_vu": true,
+        "ngap_nuoc": false,
+        "tai_nan_nang": false,
+        "gia_goc": 355.0,
+        "gia_luat_ca": 339.74652095999994,
+        "ty_le_hieu_chinh": 0.9200000000000002,
+        "gia_hieu_chinh": 326.6000000000001,
+        "do_tuong_tu": 0.8546666666666667,
+        "tuong_tu_cuc_bo": {
+          "phien_ban": 1.0,
+          "nam_sx": 0.75,
+          "so_km": 0.72,
+          "tinh_trang": 0.6666666666666667,
+          "khu_vuc": 0.6,
+          "lich_su": 1.0,
+          "rui_ro": 1.0
+        }
+      },
+      {
+        "ma_tin": "MP02638",
+        "phien_ban_id": "toyota-innova-20e-mt",
+        "ten_xe": "Toyota Innova 2.0E MT",
+        "nam_sx": 2018,
+        "so_km": 296200.0,
+        "khu_vuc": "Miền Bắc",
+        "tinh_trang": "Tốt",
+        "bao_duong_hang": false,
+        "chay_dich_vu": true,
+        "ngap_nuoc": false,
+        "tai_nan_nang": false,
+        "gia_goc": 323.0,
+        "gia_luat_ca": 339.74652095999994,
+        "ty_le_hieu_chinh": 0.9200000000000002,
+        "gia_hieu_chinh": 297.16,
+        "do_tuong_tu": 0.8473666666666666,
+        "tuong_tu_cuc_bo": {
+          "phien_ban": 1.0,
+          "nam_sx": 1.0,
+          "so_km": 0.33799999999999997,
+          "tinh_trang": 0.6666666666666667,
+          "khu_vuc": 0.6,
+          "lich_su": 1.0,
+          "rui_ro": 1.0
+        }
+      },
+      {
+        "ma_tin": "MP02742",
+        "phien_ban_id": "toyota-innova-20e-mt",
+        "ten_xe": "Toyota Innova 2.0E MT",
+        "nam_sx": 2017,
+        "so_km": 228100.0,
+        "khu_vuc": "Miền Bắc",
+        "tinh_trang": "Kém",
+        "bao_duong_hang": true,
+        "chay_dich_vu": true,
+        "ngap_nuoc": false,
+        "tai_nan_nang": false,
+        "gia_goc": 254.0,
+        "gia_luat_ca": 241.15640693760002,
+        "ty_le_hieu_chinh": 1.2961165048543688,
+        "gia_hieu_chinh": 329.21359223300965,
+        "do_tuong_tu": 0.8438166666666668,
+        "tuong_tu_cuc_bo": {
+          "phien_ban": 1.0,
+          "nam_sx": 0.75,
+          "so_km": 0.981,
+          "tinh_trang": 0.6666666666666667,
+          "khu_vuc": 0.6,
+          "lich_su": 0.5,
+          "rui_ro": 1.0
+        }
+      },
+      {
+        "ma_tin": "MP02754",
+        "phien_ban_id": "toyota-innova-20e-mt",
+        "ten_xe": "Toyota Innova 2.0E MT",
+        "nam_sx": 2019,
+        "so_km": 282400.0,
+        "khu_vuc": "Miền Bắc",
+        "tinh_trang": "Tốt",
+        "bao_duong_hang": false,
+        "chay_dich_vu": true,
+        "ngap_nuoc": false,
+        "tai_nan_nang": false,
+        "gia_goc": 363.0,
+        "gia_luat_ca": 339.74652095999994,
+        "ty_le_hieu_chinh": 0.9200000000000002,
+        "gia_hieu_chinh": 333.96000000000004,
+        "do_tuong_tu": 0.8180666666666666,
+        "tuong_tu_cuc_bo": {
+          "phien_ban": 1.0,
+          "nam_sx": 0.75,
+          "so_km": 0.476,
+          "tinh_trang": 0.6666666666666667,
+          "khu_vuc": 0.6,
+          "lich_su": 1.0,
+          "rui_ro": 1.0
+        }
+      },
+      {
+        "ma_tin": "MP01103",
+        "phien_ban_id": "toyota-innova-20e-mt",
+        "ten_xe": "Toyota Innova 2.0E MT",
+        "nam_sx": 2018,
+        "so_km": 163700.0,
+        "khu_vuc": "Miền Bắc",
+        "tinh_trang": "Tốt",
+        "bao_duong_hang": false,
+        "chay_dich_vu": false,
+        "ngap_nuoc": false,
+        "tai_nan_nang": false,
+        "gia_goc": 482.0,
+        "gia_luat_ca": 412.10315999999995,
+        "ty_le_hieu_chinh": 0.7584673684210528,
+        "gia_hieu_chinh": 365.58127157894745,
+        "do_tuong_tu": 0.7972166666666667,
+        "tuong_tu_cuc_bo": {
+          "phien_ban": 1.0,
+          "nam_sx": 1.0,
+          "so_km": 0.33699999999999997,
+          "tinh_trang": 0.6666666666666667,
+          "khu_vuc": 0.6,
+          "lich_su": 0.5,
+          "rui_ro": 1.0
+        }
+      }
+    ],
+    "thoi_gian_ms": 1.6760029998295067,
+    "id": "TC04",
+    "ten": "Xe từng chạy dịch vụ",
+    "mo_ta": "Toyota Innova 2.0E MT đời 2018, 230.000 km, từng chạy dịch vụ.",
+    "can_cu_hieu_chinh": [
+      [
+        {
+          "nhom": "GIA_MOI",
+          "yeu_to": "Giá xe mới tham chiếu",
+          "xe_can_dinh_gia": 755.0,
+          "xe_so_sanh": 755.0,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TUOI_XE",
+          "yeu_to": "Tuổi xe",
+          "xe_can_dinh_gia": 0.57,
+          "xe_so_sanh": 0.57,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "SO_KM",
+          "yeu_to": "Số km",
+          "xe_can_dinh_gia": 0.89,
+          "xe_so_sanh": 0.89,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TINH_TRANG",
+          "yeu_to": "Tình trạng",
+          "xe_can_dinh_gia": 0.92,
+          "xe_so_sanh": 1.0,
+          "ty_so": 0.92
+        },
+        {
+          "nhom": "LICH_SU",
+          "yeu_to": "Lịch sử sử dụng/bảo dưỡng",
+          "xe_can_dinh_gia": 0.8800000000000001,
+          "xe_so_sanh": 0.8799999999999999,
+          "ty_so": 1.0000000000000002
+        },
+        {
+          "nhom": "DAC_DIEM",
+          "yeu_to": "Đặc điểm phiên bản",
+          "xe_can_dinh_gia": 0.96,
+          "xe_so_sanh": 0.96,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "THUONG_HIEU",
+          "yeu_to": "Thương hiệu",
+          "xe_can_dinh_gia": 1.05,
+          "xe_so_sanh": 1.05,
+          "ty_so": 1.0
+        }
+      ],
+      [
+        {
+          "nhom": "GIA_MOI",
+          "yeu_to": "Giá xe mới tham chiếu",
+          "xe_can_dinh_gia": 755.0,
+          "xe_so_sanh": 755.0,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TUOI_XE",
+          "yeu_to": "Tuổi xe",
+          "xe_can_dinh_gia": 0.57,
+          "xe_so_sanh": 0.57,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "SO_KM",
+          "yeu_to": "Số km",
+          "xe_can_dinh_gia": 0.89,
+          "xe_so_sanh": 0.89,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TINH_TRANG",
+          "yeu_to": "Tình trạng",
+          "xe_can_dinh_gia": 0.92,
+          "xe_so_sanh": 1.0,
+          "ty_so": 0.92
+        },
+        {
+          "nhom": "LICH_SU",
+          "yeu_to": "Lịch sử sử dụng/bảo dưỡng",
+          "xe_can_dinh_gia": 0.8800000000000001,
+          "xe_so_sanh": 0.8799999999999999,
+          "ty_so": 1.0000000000000002
+        },
+        {
+          "nhom": "DAC_DIEM",
+          "yeu_to": "Đặc điểm phiên bản",
+          "xe_can_dinh_gia": 0.96,
+          "xe_so_sanh": 0.96,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "THUONG_HIEU",
+          "yeu_to": "Thương hiệu",
+          "xe_can_dinh_gia": 1.05,
+          "xe_so_sanh": 1.05,
+          "ty_so": 1.0
+        }
+      ],
+      [
+        {
+          "nhom": "GIA_MOI",
+          "yeu_to": "Giá xe mới tham chiếu",
+          "xe_can_dinh_gia": 755.0,
+          "xe_so_sanh": 755.0,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TUOI_XE",
+          "yeu_to": "Tuổi xe",
+          "xe_can_dinh_gia": 0.57,
+          "xe_so_sanh": 0.46,
+          "ty_so": 1.2391304347826084
+        },
+        {
+          "nhom": "SO_KM",
+          "yeu_to": "Số km",
+          "xe_can_dinh_gia": 0.89,
+          "xe_so_sanh": 0.95,
+          "ty_so": 0.9368421052631579
+        },
+        {
+          "nhom": "TINH_TRANG",
+          "yeu_to": "Tình trạng",
+          "xe_can_dinh_gia": 0.92,
+          "xe_so_sanh": 0.8000000000000002,
+          "ty_so": 1.15
+        },
+        {
+          "nhom": "LICH_SU",
+          "yeu_to": "Lịch sử sử dụng/bảo dưỡng",
+          "xe_can_dinh_gia": 0.8800000000000001,
+          "xe_so_sanh": 0.9064,
+          "ty_so": 0.9708737864077671
+        },
+        {
+          "nhom": "DAC_DIEM",
+          "yeu_to": "Đặc điểm phiên bản",
+          "xe_can_dinh_gia": 0.96,
+          "xe_so_sanh": 0.96,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "THUONG_HIEU",
+          "yeu_to": "Thương hiệu",
+          "xe_can_dinh_gia": 1.05,
+          "xe_so_sanh": 1.05,
+          "ty_so": 1.0
+        }
+      ],
+      [
+        {
+          "nhom": "GIA_MOI",
+          "yeu_to": "Giá xe mới tham chiếu",
+          "xe_can_dinh_gia": 755.0,
+          "xe_so_sanh": 755.0,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TUOI_XE",
+          "yeu_to": "Tuổi xe",
+          "xe_can_dinh_gia": 0.57,
+          "xe_so_sanh": 0.57,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "SO_KM",
+          "yeu_to": "Số km",
+          "xe_can_dinh_gia": 0.89,
+          "xe_so_sanh": 0.89,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TINH_TRANG",
+          "yeu_to": "Tình trạng",
+          "xe_can_dinh_gia": 0.92,
+          "xe_so_sanh": 1.0,
+          "ty_so": 0.92
+        },
+        {
+          "nhom": "LICH_SU",
+          "yeu_to": "Lịch sử sử dụng/bảo dưỡng",
+          "xe_can_dinh_gia": 0.8800000000000001,
+          "xe_so_sanh": 0.8799999999999999,
+          "ty_so": 1.0000000000000002
+        },
+        {
+          "nhom": "DAC_DIEM",
+          "yeu_to": "Đặc điểm phiên bản",
+          "xe_can_dinh_gia": 0.96,
+          "xe_so_sanh": 0.96,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "THUONG_HIEU",
+          "yeu_to": "Thương hiệu",
+          "xe_can_dinh_gia": 1.05,
+          "xe_so_sanh": 1.05,
+          "ty_so": 1.0
+        }
+      ],
+      [
+        {
+          "nhom": "GIA_MOI",
+          "yeu_to": "Giá xe mới tham chiếu",
+          "xe_can_dinh_gia": 755.0,
+          "xe_so_sanh": 755.0,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TUOI_XE",
+          "yeu_to": "Tuổi xe",
+          "xe_can_dinh_gia": 0.57,
+          "xe_so_sanh": 0.57,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "SO_KM",
+          "yeu_to": "Số km",
+          "xe_can_dinh_gia": 0.89,
+          "xe_so_sanh": 0.95,
+          "ty_so": 0.9368421052631579
+        },
+        {
+          "nhom": "TINH_TRANG",
+          "yeu_to": "Tình trạng",
+          "xe_can_dinh_gia": 0.92,
+          "xe_so_sanh": 1.0,
+          "ty_so": 0.92
+        },
+        {
+          "nhom": "LICH_SU",
+          "yeu_to": "Lịch sử sử dụng/bảo dưỡng",
+          "xe_can_dinh_gia": 0.8800000000000001,
+          "xe_so_sanh": 1.0,
+          "ty_so": 0.8800000000000001
+        },
+        {
+          "nhom": "DAC_DIEM",
+          "yeu_to": "Đặc điểm phiên bản",
+          "xe_can_dinh_gia": 0.96,
+          "xe_so_sanh": 0.96,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "THUONG_HIEU",
+          "yeu_to": "Thương hiệu",
+          "xe_can_dinh_gia": 1.05,
+          "xe_so_sanh": 1.05,
+          "ty_so": 1.0
+        }
+      ]
+    ]
+  },
+  {
+    "dau_vao": {
+      "phien_ban": "toyota-lc300-35",
+      "nam_sx": 2022,
+      "so_km": 30000,
+      "khu_vuc": "Miền Bắc",
+      "tinh_trang": "Rất tốt",
+      "bao_duong_hang": true,
+      "chay_dich_vu": false,
+      "ngap_nuoc": false,
+      "tai_nan_nang": false
+    },
+    "hop_le": true,
+    "xe": "Toyota Land Cruiser LC300 3.5 V6",
+    "phan_khuc": "SUV-F",
+    "gia_moi": 4286.0,
+    "gia_luat": 3409.2141457920006,
+    "gia_cbr": null,
+    "gia_de_xuat": 3409.2141457920006,
+    "w_cbr": 0.0,
+    "alpha": 1.0,
+    "n_xe_tuong_tu": 0,
+    "sim_tb": null,
+    "cv": null,
+    "d": null,
+    "delta": 0.12,
+    "khoang_thap": 3000.1084482969604,
+    "khoang_cao": 3818.3198432870413,
+    "muc_tin_cay": "Thấp",
+    "ly_do_tin_cay": [
+      "Không có xe tương tự đạt ngưỡng; giá chỉ dựa trên luật."
+    ],
+    "trang_thai_cbr": "thieu_du_lieu",
+    "ly_do_cbr": "Kho tình huống không có xe cùng phân khúc SUV-F với đời 2019–2025.",
+    "so_ung_vien_cbr": 0,
+    "so_dat_nguong_cbr": 0,
+    "luat_kich_hoat": [
+      "R01",
+      "R02",
+      "R03",
+      "R06",
+      "R10",
+      "R14",
+      "R17",
+      "R23"
+    ],
+    "vet": [
+      {
+        "chu_ky": 1,
+        "ma_luat": "R01",
+        "nhom": "DAN_XUAT",
+        "ten": "Tính tuổi xe",
+        "uu_tien": 100,
+        "tap_xung_dot": [
+          "R01",
+          "R03"
+        ],
+        "dieu_kien_thoa": [
+          "năm sản xuất đã biết (2022)"
+        ],
+        "giai_thich": "Tuổi xe = 2026 − 2022 = 4 năm.",
+        "gia_truoc": null,
+        "gia_sau": null,
+        "he_so": null,
+        "thay_doi": null,
+        "du_kien_moi": {
+          "tuoi_xe": 4
+        },
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 2,
+        "ma_luat": "R02",
+        "nhom": "DAN_XUAT",
+        "ten": "Tính tỷ lệ km so với chuẩn",
+        "uu_tien": 99,
+        "tap_xung_dot": [
+          "R02",
+          "R03"
+        ],
+        "dieu_kien_thoa": [
+          "tuổi xe đã biết (4)",
+          "số km đã biết (30.000)"
+        ],
+        "giai_thich": "Km chuẩn = 15.000 × max(1, 4) = 60.000 km; tỷ lệ km = 30.000 / 60.000 = 0,50.",
+        "gia_truoc": null,
+        "gia_sau": null,
+        "he_so": null,
+        "thay_doi": null,
+        "du_kien_moi": {
+          "km_chuan": 60000.0,
+          "ty_le_km": 0.5
+        },
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 3,
+        "ma_luat": "R03",
+        "nhom": "KHOI_TAO",
+        "ten": "Khởi tạo giá từ giá xe mới",
+        "uu_tien": 98,
+        "tap_xung_dot": [
+          "R03"
+        ],
+        "dieu_kien_thoa": [
+          "giá xe mới = 4.286 > 0"
+        ],
+        "giai_thich": "Giá xuất phát = giá xe mới tham chiếu 4.286 triệu (khung phiên bản).",
+        "gia_truoc": null,
+        "gia_sau": 4286.0,
+        "he_so": null,
+        "thay_doi": null,
+        "du_kien_moi": {
+          "gia": 4286.0
+        },
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 4,
+        "ma_luat": "R06",
+        "nhom": "TUOI_XE",
+        "ten": "Khấu hao xe 4–5 năm",
+        "uu_tien": 80,
+        "tap_xung_dot": [
+          "R06",
+          "R10",
+          "R14",
+          "R17",
+          "R23",
+          "R25"
+        ],
+        "dieu_kien_thoa": [
+          "tuổi xe = 4 ≥ 4",
+          "tuổi xe = 4 ≤ 5"
+        ],
+        "giai_thich": "Xe 4 năm tuổi (nhóm 4–5 năm) → nhân 0,68.",
+        "gia_truoc": 4286.0,
+        "gia_sau": 2914.48,
+        "he_so": 0.68,
+        "thay_doi": -1371.52,
+        "du_kien_moi": {},
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 5,
+        "ma_luat": "R10",
+        "nhom": "SO_KM",
+        "ten": "Xe đi ít",
+        "uu_tien": 70,
+        "tap_xung_dot": [
+          "R10",
+          "R14",
+          "R17",
+          "R23"
+        ],
+        "dieu_kien_thoa": [
+          "tỷ lệ km = 0,50 < 0,60",
+          "chưa có dữ kiện 'nghi chỉnh đồng hồ km'"
+        ],
+        "giai_thich": "Tỷ lệ km 0,50 < 0,6 và không nghi chỉnh đồng hồ → nhân 1,04.",
+        "gia_truoc": 2914.48,
+        "gia_sau": 3031.0592,
+        "he_so": 1.04,
+        "thay_doi": 116.57920000000013,
+        "du_kien_moi": {},
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 6,
+        "ma_luat": "R14",
+        "nhom": "TINH_TRANG",
+        "ten": "Tình trạng rất tốt",
+        "uu_tien": 60,
+        "tap_xung_dot": [
+          "R14",
+          "R17",
+          "R23"
+        ],
+        "dieu_kien_thoa": [
+          "tình trạng = Rất tốt"
+        ],
+        "giai_thich": "Tình trạng Rất tốt → nhân 1,04.",
+        "gia_truoc": 3031.0592,
+        "gia_sau": 3152.3015680000003,
+        "he_so": 1.04,
+        "thay_doi": 121.24236800000017,
+        "du_kien_moi": {},
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 7,
+        "ma_luat": "R17",
+        "nhom": "LICH_SU",
+        "ten": "Bảo dưỡng định kỳ tại hãng",
+        "uu_tien": 50,
+        "tap_xung_dot": [
+          "R17",
+          "R23"
+        ],
+        "dieu_kien_thoa": [
+          "bảo dưỡng hãng = có"
+        ],
+        "giai_thich": "Có lịch sử bảo dưỡng tại hãng → nhân 1,03.",
+        "gia_truoc": 3152.3015680000003,
+        "gia_sau": 3246.8706150400003,
+        "he_so": 1.03,
+        "thay_doi": 94.56904703999999,
+        "du_kien_moi": {},
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 8,
+        "ma_luat": "R23",
+        "nhom": "THUONG_HIEU",
+        "ten": "Thương hiệu giữ giá cao",
+        "uu_tien": 40,
+        "tap_xung_dot": [
+          "R23"
+        ],
+        "dieu_kien_thoa": [
+          "nhóm giữ giá = cao"
+        ],
+        "giai_thich": "Hãng Toyota thuộc nhóm giữ giá cao (khung hãng) → nhân 1,05.",
+        "gia_truoc": 3246.8706150400003,
+        "gia_sau": 3409.2141457920006,
+        "he_so": 1.05,
+        "thay_doi": 162.34353075200033,
+        "du_kien_moi": {},
+        "canh_bao": [],
+        "ghi_chu": ""
+      }
+    ],
+    "canh_bao": [
+      {
+        "ma_luat": "CBR",
+        "muc": "chu_y",
+        "noi_dung": "Thiếu tình huống tương tự: Kho tình huống không có xe cùng phân khúc SUV-F với đời 2019–2025. Hệ thống dùng giá theo luật (w_CBR = 0, α = 1) và mở rộng khoảng giá; nên bổ sung giao dịch cùng phân khúc trước khi chốt giá."
+      }
+    ],
+    "xe_tuong_tu": [],
+    "thoi_gian_ms": 0.39876299979368923,
+    "id": "TC05",
+    "ten": "Thiếu tình huống tương tự",
+    "mo_ta": "Toyota Land Cruiser LC300 đời 2022: phiên bản hiếm, kho tình huống không có xe cùng phân khúc."
+  },
+  {
+    "dau_vao": {
+      "phien_ban": "kia-cerato-16at-lux",
+      "nam_sx": 2019,
+      "so_km": 80000,
+      "khu_vuc": "Miền Trung",
+      "tinh_trang": "Trung bình",
+      "bao_duong_hang": false,
+      "chay_dich_vu": false,
+      "ngap_nuoc": true,
+      "tai_nan_nang": true
+    },
+    "hop_le": true,
+    "xe": "Kia Cerato 1.6 AT Luxury",
+    "phan_khuc": "C",
+    "gia_moi": 599.0,
+    "gia_luat": 185.01408839999996,
+    "gia_cbr": 177.64481532294948,
+    "gia_de_xuat": 180.2121128518349,
+    "w_cbr": 0.6516213333333334,
+    "alpha": 0.3483786666666666,
+    "n_xe_tuong_tu": 5,
+    "sim_tb": 0.8145266666666666,
+    "cv": 0.036579509213307514,
+    "d": 0.040892218399932304,
+    "delta": 0.13,
+    "khoang_thap": 156.78453818109637,
+    "khoang_cao": 203.6396875225734,
+    "muc_tin_cay": "Thấp",
+    "ly_do_tin_cay": [
+      "Có cảnh báo rủi ro nghiêm trọng (ngập nước/tai nạn nặng)."
+    ],
+    "trang_thai_cbr": "du_du_lieu",
+    "ly_do_cbr": "",
+    "so_ung_vien_cbr": 139,
+    "so_dat_nguong_cbr": 7,
+    "luat_kich_hoat": [
+      "R01",
+      "R02",
+      "R03",
+      "R22",
+      "R20",
+      "R21",
+      "R07",
+      "R15",
+      "R24"
+    ],
+    "vet": [
+      {
+        "chu_ky": 1,
+        "ma_luat": "R01",
+        "nhom": "DAN_XUAT",
+        "ten": "Tính tuổi xe",
+        "uu_tien": 100,
+        "tap_xung_dot": [
+          "R01",
+          "R03"
+        ],
+        "dieu_kien_thoa": [
+          "năm sản xuất đã biết (2019)"
+        ],
+        "giai_thich": "Tuổi xe = 2026 − 2019 = 7 năm.",
+        "gia_truoc": null,
+        "gia_sau": null,
+        "he_so": null,
+        "thay_doi": null,
+        "du_kien_moi": {
+          "tuoi_xe": 7
+        },
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 2,
+        "ma_luat": "R02",
+        "nhom": "DAN_XUAT",
+        "ten": "Tính tỷ lệ km so với chuẩn",
+        "uu_tien": 99,
+        "tap_xung_dot": [
+          "R02",
+          "R03"
+        ],
+        "dieu_kien_thoa": [
+          "tuổi xe đã biết (7)",
+          "số km đã biết (80.000)"
+        ],
+        "giai_thich": "Km chuẩn = 15.000 × max(1, 7) = 105.000 km; tỷ lệ km = 80.000 / 105.000 = 0,76.",
+        "gia_truoc": null,
+        "gia_sau": null,
+        "he_so": null,
+        "thay_doi": null,
+        "du_kien_moi": {
+          "km_chuan": 105000.0,
+          "ty_le_km": 0.7619047619047619
+        },
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 3,
+        "ma_luat": "R03",
+        "nhom": "KHOI_TAO",
+        "ten": "Khởi tạo giá từ giá xe mới",
+        "uu_tien": 98,
+        "tap_xung_dot": [
+          "R03"
+        ],
+        "dieu_kien_thoa": [
+          "giá xe mới = 599 > 0"
+        ],
+        "giai_thich": "Giá xuất phát = giá xe mới tham chiếu 599 triệu (khung phiên bản).",
+        "gia_truoc": null,
+        "gia_sau": 599.0,
+        "he_so": null,
+        "thay_doi": null,
+        "du_kien_moi": {
+          "gia": 599.0
+        },
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 4,
+        "ma_luat": "R22",
+        "nhom": "RUI_RO",
+        "ten": "Rủi ro kép: ngập nước và tai nạn nặng",
+        "uu_tien": 95,
+        "tap_xung_dot": [
+          "R22",
+          "R20",
+          "R21",
+          "R07",
+          "R15",
+          "R24",
+          "R25"
+        ],
+        "dieu_kien_thoa": [
+          "ngập nước = có",
+          "tai nạn nặng = có"
+        ],
+        "giai_thich": "Ngập nước và tai nạn nặng cùng xảy ra → hệ số rủi ro gộp 0,62 (thay cho 0,70 × 0,75).",
+        "gia_truoc": 599.0,
+        "gia_sau": 371.38,
+        "he_so": 0.62,
+        "thay_doi": -227.62,
+        "du_kien_moi": {},
+        "canh_bao": [
+          {
+            "ma_luat": "R22",
+            "muc": "nghiem_trong",
+            "noi_dung": "Xe vừa ngập nước vừa tai nạn nặng: rủi ro kỹ thuật rất cao, cần giám định độc lập trước khi giao dịch."
+          }
+        ],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 5,
+        "ma_luat": "R20",
+        "nhom": "RUI_RO",
+        "ten": "Xe từng ngập nước",
+        "uu_tien": 92,
+        "tap_xung_dot": [
+          "R20",
+          "R21",
+          "R07",
+          "R15",
+          "R24"
+        ],
+        "dieu_kien_thoa": [
+          "ngập nước = có"
+        ],
+        "giai_thich": "Xe từng ngập nước → nhân 0,70.",
+        "gia_truoc": 371.38,
+        "gia_sau": 371.38,
+        "he_so": 1.0,
+        "thay_doi": 0.0,
+        "du_kien_moi": {},
+        "canh_bao": [
+          {
+            "ma_luat": "R20",
+            "muc": "nghiem_trong",
+            "noi_dung": "Xe từng ngập nước: kiểm tra hệ thống điện, cảm biến, sàn xe; giá giảm mạnh và biến động lớn."
+          }
+        ],
+        "ghi_chu": "Không nhân thêm hệ số 0,70: nhóm loại trừ RUI_RO_NANG đã được áp dụng bởi R22; chỉ ghi nhận cảnh báo."
+      },
+      {
+        "chu_ky": 6,
+        "ma_luat": "R21",
+        "nhom": "RUI_RO",
+        "ten": "Xe từng tai nạn nặng",
+        "uu_tien": 91,
+        "tap_xung_dot": [
+          "R21",
+          "R07",
+          "R15",
+          "R24"
+        ],
+        "dieu_kien_thoa": [
+          "tai nạn nặng = có"
+        ],
+        "giai_thich": "Xe từng tai nạn nặng → nhân 0,75.",
+        "gia_truoc": 371.38,
+        "gia_sau": 371.38,
+        "he_so": 1.0,
+        "thay_doi": 0.0,
+        "du_kien_moi": {},
+        "canh_bao": [
+          {
+            "ma_luat": "R21",
+            "muc": "nghiem_trong",
+            "noi_dung": "Xe từng tai nạn nặng: kiểm tra khung gầm, túi khí và lịch sử sửa chữa."
+          }
+        ],
+        "ghi_chu": "Không nhân thêm hệ số 0,75: nhóm loại trừ RUI_RO_NANG đã được áp dụng bởi R22; chỉ ghi nhận cảnh báo."
+      },
+      {
+        "chu_ky": 7,
+        "ma_luat": "R07",
+        "nhom": "TUOI_XE",
+        "ten": "Khấu hao xe 6–8 năm",
+        "uu_tien": 80,
+        "tap_xung_dot": [
+          "R07",
+          "R15",
+          "R24"
+        ],
+        "dieu_kien_thoa": [
+          "tuổi xe = 7 ≥ 6",
+          "tuổi xe = 7 ≤ 8"
+        ],
+        "giai_thich": "Xe 7 năm tuổi (nhóm 6–8 năm) → nhân 0,57.",
+        "gia_truoc": 371.38,
+        "gia_sau": 211.68659999999997,
+        "he_so": 0.57,
+        "thay_doi": -159.69340000000003,
+        "du_kien_moi": {},
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 8,
+        "ma_luat": "R15",
+        "nhom": "TINH_TRANG",
+        "ten": "Tình trạng trung bình",
+        "uu_tien": 60,
+        "tap_xung_dot": [
+          "R15",
+          "R24"
+        ],
+        "dieu_kien_thoa": [
+          "tình trạng = Trung bình"
+        ],
+        "giai_thich": "Tình trạng Trung bình → nhân 0,92.",
+        "gia_truoc": 211.68659999999997,
+        "gia_sau": 194.75167199999999,
+        "he_so": 0.92,
+        "thay_doi": -16.934927999999985,
+        "du_kien_moi": {},
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 9,
+        "ma_luat": "R24",
+        "nhom": "THUONG_HIEU",
+        "ten": "Thương hiệu giữ giá thấp",
+        "uu_tien": 40,
+        "tap_xung_dot": [
+          "R24"
+        ],
+        "dieu_kien_thoa": [
+          "nhóm giữ giá = thap"
+        ],
+        "giai_thich": "Hãng Kia thuộc nhóm giữ giá thấp (khung hãng) → nhân 0,95.",
+        "gia_truoc": 194.75167199999999,
+        "gia_sau": 185.01408839999996,
+        "he_so": 0.95,
+        "thay_doi": -9.737583600000022,
+        "du_kien_moi": {},
+        "canh_bao": [],
+        "ghi_chu": ""
+      }
+    ],
+    "canh_bao": [
+      {
+        "ma_luat": "R22",
+        "muc": "nghiem_trong",
+        "noi_dung": "Xe vừa ngập nước vừa tai nạn nặng: rủi ro kỹ thuật rất cao, cần giám định độc lập trước khi giao dịch."
+      },
+      {
+        "ma_luat": "R20",
+        "muc": "nghiem_trong",
+        "noi_dung": "Xe từng ngập nước: kiểm tra hệ thống điện, cảm biến, sàn xe; giá giảm mạnh và biến động lớn."
+      },
+      {
+        "ma_luat": "R21",
+        "muc": "nghiem_trong",
+        "noi_dung": "Xe từng tai nạn nặng: kiểm tra khung gầm, túi khí và lịch sử sửa chữa."
+      }
+    ],
+    "xe_tuong_tu": [
+      {
+        "ma_tin": "MP00492",
+        "phien_ban_id": "kia-cerato-16at-lux",
+        "ten_xe": "Kia Cerato 1.6 AT Luxury",
+        "nam_sx": 2019,
+        "so_km": 90200.0,
+        "khu_vuc": "Miền Nam",
+        "tinh_trang": "Tốt",
+        "bao_duong_hang": false,
+        "chay_dich_vu": false,
+        "ngap_nuoc": false,
+        "tai_nan_nang": false,
+        "gia_goc": 327.0,
+        "gia_luat_ca": 324.35849999999994,
+        "ty_le_hieu_chinh": 0.5704,
+        "gia_hieu_chinh": 186.5208,
+        "do_tuong_tu": 0.8313666666666667,
+        "tuong_tu_cuc_bo": {
+          "phien_ban": 1.0,
+          "nam_sx": 1.0,
+          "so_km": 0.898,
+          "tinh_trang": 0.6666666666666667,
+          "khu_vuc": 0.6,
+          "lich_su": 1.0,
+          "rui_ro": 0.0
+        }
+      },
+      {
+        "ma_tin": "MP02137",
+        "phien_ban_id": "kia-cerato-16at-lux",
+        "ten_xe": "Kia Cerato 1.6 AT Luxury",
+        "nam_sx": 2019,
+        "so_km": 76500.0,
+        "khu_vuc": "Miền Nam",
+        "tinh_trang": "Trung bình",
+        "bao_duong_hang": true,
+        "chay_dich_vu": false,
+        "ngap_nuoc": false,
+        "tai_nan_nang": false,
+        "gia_goc": 287.0,
+        "gia_luat_ca": 307.3621146,
+        "ty_le_hieu_chinh": 0.6019417475728155,
+        "gia_hieu_chinh": 172.75728155339806,
+        "do_tuong_tu": 0.82475,
+        "tuong_tu_cuc_bo": {
+          "phien_ban": 1.0,
+          "nam_sx": 1.0,
+          "so_km": 0.965,
+          "tinh_trang": 1.0,
+          "khu_vuc": 0.6,
+          "lich_su": 0.5,
+          "rui_ro": 0.0
+        }
+      },
+      {
+        "ma_tin": "MP02795",
+        "phien_ban_id": "kia-cerato-16at-lux",
+        "ten_xe": "Kia Cerato 1.6 AT Luxury",
+        "nam_sx": 2019,
+        "so_km": 90100.0,
+        "khu_vuc": "Miền Trung",
+        "tinh_trang": "Rất tốt",
+        "bao_duong_hang": false,
+        "chay_dich_vu": false,
+        "ngap_nuoc": false,
+        "tai_nan_nang": false,
+        "gia_goc": 311.0,
+        "gia_luat_ca": 337.3328399999999,
+        "ty_le_hieu_chinh": 0.5484615384615384,
+        "gia_hieu_chinh": 170.57153846153847,
+        "do_tuong_tu": 0.8181833333333334,
+        "tuong_tu_cuc_bo": {
+          "phien_ban": 1.0,
+          "nam_sx": 1.0,
+          "so_km": 0.899,
+          "tinh_trang": 0.33333333333333337,
+          "khu_vuc": 1.0,
+          "lich_su": 1.0,
+          "rui_ro": 0.0
+        }
+      },
+      {
+        "ma_tin": "MP01548",
+        "phien_ban_id": "kia-cerato-16at-lux",
+        "ten_xe": "Kia Cerato 1.6 AT Luxury",
+        "nam_sx": 2019,
+        "so_km": 104900.0,
+        "khu_vuc": "Miền Nam",
+        "tinh_trang": "Tốt",
+        "bao_duong_hang": false,
+        "chay_dich_vu": false,
+        "ngap_nuoc": false,
+        "tai_nan_nang": false,
+        "gia_goc": 323.0,
+        "gia_luat_ca": 324.35849999999994,
+        "ty_le_hieu_chinh": 0.5704,
+        "gia_hieu_chinh": 184.2392,
+        "do_tuong_tu": 0.8093166666666667,
+        "tuong_tu_cuc_bo": {
+          "phien_ban": 1.0,
+          "nam_sx": 1.0,
+          "so_km": 0.751,
+          "tinh_trang": 0.6666666666666667,
+          "khu_vuc": 0.6,
+          "lich_su": 1.0,
+          "rui_ro": 0.0
+        }
+      },
+      {
+        "ma_tin": "MP01110",
+        "phien_ban_id": "kia-cerato-16at-lux",
+        "ten_xe": "Kia Cerato 1.6 AT Luxury",
+        "nam_sx": 2018,
+        "so_km": 85100.0,
+        "khu_vuc": "Miền Bắc",
+        "tinh_trang": "Tốt",
+        "bao_duong_hang": false,
+        "chay_dich_vu": false,
+        "ngap_nuoc": false,
+        "tai_nan_nang": false,
+        "gia_goc": 305.0,
+        "gia_luat_ca": 324.35849999999994,
+        "ty_le_hieu_chinh": 0.5704,
+        "gia_hieu_chinh": 173.972,
+        "do_tuong_tu": 0.7890166666666666,
+        "tuong_tu_cuc_bo": {
+          "phien_ban": 1.0,
+          "nam_sx": 0.75,
+          "so_km": 0.949,
+          "tinh_trang": 0.6666666666666667,
+          "khu_vuc": 0.6,
+          "lich_su": 1.0,
+          "rui_ro": 0.0
+        }
+      }
+    ],
+    "thoi_gian_ms": 1.375470000311907,
+    "id": "TC06",
+    "ten": "Rủi ro kép: ngập nước và tai nạn nặng",
+    "mo_ta": "Kia Cerato 1.6 AT Luxury đời 2019, vừa ngập nước vừa tai nạn nặng.",
+    "can_cu_hieu_chinh": [
+      [
+        {
+          "nhom": "GIA_MOI",
+          "yeu_to": "Giá xe mới tham chiếu",
+          "xe_can_dinh_gia": 599.0,
+          "xe_so_sanh": 599.0,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TUOI_XE",
+          "yeu_to": "Tuổi xe",
+          "xe_can_dinh_gia": 0.57,
+          "xe_so_sanh": 0.57,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TINH_TRANG",
+          "yeu_to": "Tình trạng",
+          "xe_can_dinh_gia": 0.92,
+          "xe_so_sanh": 1.0,
+          "ty_so": 0.92
+        },
+        {
+          "nhom": "RUI_RO",
+          "yeu_to": "Rủi ro nghiêm trọng",
+          "xe_can_dinh_gia": 0.62,
+          "xe_so_sanh": 1.0,
+          "ty_so": 0.62
+        },
+        {
+          "nhom": "THUONG_HIEU",
+          "yeu_to": "Thương hiệu",
+          "xe_can_dinh_gia": 0.9499999999999998,
+          "xe_so_sanh": 0.95,
+          "ty_so": 0.9999999999999999
+        }
+      ],
+      [
+        {
+          "nhom": "GIA_MOI",
+          "yeu_to": "Giá xe mới tham chiếu",
+          "xe_can_dinh_gia": 599.0,
+          "xe_so_sanh": 599.0,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TUOI_XE",
+          "yeu_to": "Tuổi xe",
+          "xe_can_dinh_gia": 0.57,
+          "xe_so_sanh": 0.57,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TINH_TRANG",
+          "yeu_to": "Tình trạng",
+          "xe_can_dinh_gia": 0.92,
+          "xe_so_sanh": 0.92,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "LICH_SU",
+          "yeu_to": "Lịch sử sử dụng/bảo dưỡng",
+          "xe_can_dinh_gia": 1.0,
+          "xe_so_sanh": 1.03,
+          "ty_so": 0.970873786407767
+        },
+        {
+          "nhom": "RUI_RO",
+          "yeu_to": "Rủi ro nghiêm trọng",
+          "xe_can_dinh_gia": 0.62,
+          "xe_so_sanh": 1.0,
+          "ty_so": 0.62
+        },
+        {
+          "nhom": "THUONG_HIEU",
+          "yeu_to": "Thương hiệu",
+          "xe_can_dinh_gia": 0.9499999999999998,
+          "xe_so_sanh": 0.95,
+          "ty_so": 0.9999999999999999
+        }
+      ],
+      [
+        {
+          "nhom": "GIA_MOI",
+          "yeu_to": "Giá xe mới tham chiếu",
+          "xe_can_dinh_gia": 599.0,
+          "xe_so_sanh": 599.0,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TUOI_XE",
+          "yeu_to": "Tuổi xe",
+          "xe_can_dinh_gia": 0.57,
+          "xe_so_sanh": 0.57,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TINH_TRANG",
+          "yeu_to": "Tình trạng",
+          "xe_can_dinh_gia": 0.92,
+          "xe_so_sanh": 1.04,
+          "ty_so": 0.8846153846153846
+        },
+        {
+          "nhom": "RUI_RO",
+          "yeu_to": "Rủi ro nghiêm trọng",
+          "xe_can_dinh_gia": 0.62,
+          "xe_so_sanh": 1.0,
+          "ty_so": 0.62
+        },
+        {
+          "nhom": "THUONG_HIEU",
+          "yeu_to": "Thương hiệu",
+          "xe_can_dinh_gia": 0.9499999999999998,
+          "xe_so_sanh": 0.95,
+          "ty_so": 0.9999999999999999
+        }
+      ],
+      [
+        {
+          "nhom": "GIA_MOI",
+          "yeu_to": "Giá xe mới tham chiếu",
+          "xe_can_dinh_gia": 599.0,
+          "xe_so_sanh": 599.0,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TUOI_XE",
+          "yeu_to": "Tuổi xe",
+          "xe_can_dinh_gia": 0.57,
+          "xe_so_sanh": 0.57,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TINH_TRANG",
+          "yeu_to": "Tình trạng",
+          "xe_can_dinh_gia": 0.92,
+          "xe_so_sanh": 1.0,
+          "ty_so": 0.92
+        },
+        {
+          "nhom": "RUI_RO",
+          "yeu_to": "Rủi ro nghiêm trọng",
+          "xe_can_dinh_gia": 0.62,
+          "xe_so_sanh": 1.0,
+          "ty_so": 0.62
+        },
+        {
+          "nhom": "THUONG_HIEU",
+          "yeu_to": "Thương hiệu",
+          "xe_can_dinh_gia": 0.9499999999999998,
+          "xe_so_sanh": 0.95,
+          "ty_so": 0.9999999999999999
+        }
+      ],
+      [
+        {
+          "nhom": "GIA_MOI",
+          "yeu_to": "Giá xe mới tham chiếu",
+          "xe_can_dinh_gia": 599.0,
+          "xe_so_sanh": 599.0,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TUOI_XE",
+          "yeu_to": "Tuổi xe",
+          "xe_can_dinh_gia": 0.57,
+          "xe_so_sanh": 0.57,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TINH_TRANG",
+          "yeu_to": "Tình trạng",
+          "xe_can_dinh_gia": 0.92,
+          "xe_so_sanh": 1.0,
+          "ty_so": 0.92
+        },
+        {
+          "nhom": "RUI_RO",
+          "yeu_to": "Rủi ro nghiêm trọng",
+          "xe_can_dinh_gia": 0.62,
+          "xe_so_sanh": 1.0,
+          "ty_so": 0.62
+        },
+        {
+          "nhom": "THUONG_HIEU",
+          "yeu_to": "Thương hiệu",
+          "xe_can_dinh_gia": 0.9499999999999998,
+          "xe_so_sanh": 0.95,
+          "ty_so": 0.9999999999999999
+        }
+      ]
+    ]
+  },
+  {
+    "dau_vao": {
+      "phien_ban": "mazda3-15-luxury",
+      "nam_sx": 2018,
+      "so_km": 15000,
+      "khu_vuc": "Miền Bắc",
+      "tinh_trang": "Tốt",
+      "bao_duong_hang": false,
+      "chay_dich_vu": false,
+      "ngap_nuoc": false,
+      "tai_nan_nang": false
+    },
+    "hop_le": true,
+    "xe": "Mazda Mazda3 1.5L Luxury",
+    "phan_khuc": "C",
+    "gia_moi": 719.0,
+    "gia_luat": 389.33849999999995,
+    "gia_cbr": 344.87997353140645,
+    "gia_de_xuat": 358.66235384881156,
+    "w_cbr": 0.6899946666666668,
+    "alpha": 0.31000533333333324,
+    "n_xe_tuong_tu": 5,
+    "sim_tb": 0.8624933333333333,
+    "cv": 0.06286442040188332,
+    "d": 0.12395648997311352,
+    "delta": 0.12395648997311352,
+    "khoang_thap": 314.20382738021806,
+    "khoang_cao": 403.12088031740507,
+    "muc_tin_cay": "Trung bình",
+    "ly_do_tin_cay": [
+      "Luật và CBR chênh 12,4% (> 10%).",
+      "Có cảnh báo mức chú ý cần kiểm tra thêm."
+    ],
+    "trang_thai_cbr": "du_du_lieu",
+    "ly_do_cbr": "",
+    "so_ung_vien_cbr": 117,
+    "so_dat_nguong_cbr": 29,
+    "luat_kich_hoat": [
+      "R01",
+      "R02",
+      "R03",
+      "R13",
+      "R07",
+      "R24"
+    ],
+    "vet": [
+      {
+        "chu_ky": 1,
+        "ma_luat": "R01",
+        "nhom": "DAN_XUAT",
+        "ten": "Tính tuổi xe",
+        "uu_tien": 100,
+        "tap_xung_dot": [
+          "R01",
+          "R03"
+        ],
+        "dieu_kien_thoa": [
+          "năm sản xuất đã biết (2018)"
+        ],
+        "giai_thich": "Tuổi xe = 2026 − 2018 = 8 năm.",
+        "gia_truoc": null,
+        "gia_sau": null,
+        "he_so": null,
+        "thay_doi": null,
+        "du_kien_moi": {
+          "tuoi_xe": 8
+        },
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 2,
+        "ma_luat": "R02",
+        "nhom": "DAN_XUAT",
+        "ten": "Tính tỷ lệ km so với chuẩn",
+        "uu_tien": 99,
+        "tap_xung_dot": [
+          "R02",
+          "R03"
+        ],
+        "dieu_kien_thoa": [
+          "tuổi xe đã biết (8)",
+          "số km đã biết (15.000)"
+        ],
+        "giai_thich": "Km chuẩn = 15.000 × max(1, 8) = 120.000 km; tỷ lệ km = 15.000 / 120.000 = 0,12.",
+        "gia_truoc": null,
+        "gia_sau": null,
+        "he_so": null,
+        "thay_doi": null,
+        "du_kien_moi": {
+          "km_chuan": 120000.0,
+          "ty_le_km": 0.125
+        },
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 3,
+        "ma_luat": "R03",
+        "nhom": "KHOI_TAO",
+        "ten": "Khởi tạo giá từ giá xe mới",
+        "uu_tien": 98,
+        "tap_xung_dot": [
+          "R03",
+          "R13"
+        ],
+        "dieu_kien_thoa": [
+          "giá xe mới = 719 > 0"
+        ],
+        "giai_thich": "Giá xuất phát = giá xe mới tham chiếu 719 triệu (khung phiên bản).",
+        "gia_truoc": null,
+        "gia_sau": 719.0,
+        "he_so": null,
+        "thay_doi": null,
+        "du_kien_moi": {
+          "gia": 719.0
+        },
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 4,
+        "ma_luat": "R13",
+        "nhom": "KIEM_TRA",
+        "ten": "Nghi vấn chỉnh đồng hồ km",
+        "uu_tien": 85,
+        "tap_xung_dot": [
+          "R13",
+          "R07",
+          "R10",
+          "R24",
+          "R25"
+        ],
+        "dieu_kien_thoa": [
+          "tuổi xe = 8 ≥ 5",
+          "tỷ lệ km = 0,12 < 0,25"
+        ],
+        "giai_thich": "Xe 8 năm nhưng tỷ lệ km chỉ 0,12 (< 0,25) → đặt nghi_tua_odo = đúng, chặn R10.",
+        "gia_truoc": null,
+        "gia_sau": null,
+        "he_so": null,
+        "thay_doi": null,
+        "du_kien_moi": {
+          "nghi_tua_odo": true
+        },
+        "canh_bao": [
+          {
+            "ma_luat": "R13",
+            "muc": "chu_y",
+            "noi_dung": "Số km thấp bất thường so với tuổi xe: nghi vấn chỉnh đồng hồ km, cần đối chiếu lịch sử bảo dưỡng. Không cộng điểm đi ít."
+          }
+        ],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 5,
+        "ma_luat": "R07",
+        "nhom": "TUOI_XE",
+        "ten": "Khấu hao xe 6–8 năm",
+        "uu_tien": 80,
+        "tap_xung_dot": [
+          "R07",
+          "R24",
+          "R25"
+        ],
+        "dieu_kien_thoa": [
+          "tuổi xe = 8 ≥ 6",
+          "tuổi xe = 8 ≤ 8"
+        ],
+        "giai_thich": "Xe 8 năm tuổi (nhóm 6–8 năm) → nhân 0,57.",
+        "gia_truoc": 719.0,
+        "gia_sau": 409.83,
+        "he_so": 0.57,
+        "thay_doi": -309.17,
+        "du_kien_moi": {},
+        "canh_bao": [],
+        "ghi_chu": ""
+      },
+      {
+        "chu_ky": 6,
+        "ma_luat": "R24",
+        "nhom": "THUONG_HIEU",
+        "ten": "Thương hiệu giữ giá thấp",
+        "uu_tien": 40,
+        "tap_xung_dot": [
+          "R24"
+        ],
+        "dieu_kien_thoa": [
+          "nhóm giữ giá = thap"
+        ],
+        "giai_thich": "Hãng Mazda thuộc nhóm giữ giá thấp (khung hãng) → nhân 0,95.",
+        "gia_truoc": 409.83,
+        "gia_sau": 389.33849999999995,
+        "he_so": 0.95,
+        "thay_doi": -20.49150000000003,
+        "du_kien_moi": {},
+        "canh_bao": [],
+        "ghi_chu": ""
+      }
+    ],
+    "canh_bao": [
+      {
+        "ma_luat": "R13",
+        "muc": "chu_y",
+        "noi_dung": "Số km thấp bất thường so với tuổi xe: nghi vấn chỉnh đồng hồ km, cần đối chiếu lịch sử bảo dưỡng. Không cộng điểm đi ít."
+      }
+    ],
+    "xe_tuong_tu": [
+      {
+        "ma_tin": "MP00832",
+        "phien_ban_id": "mazda3-15-luxury",
+        "ten_xe": "Mazda Mazda3 1.5L Luxury",
+        "nam_sx": 2018,
+        "so_km": 77400.0,
+        "khu_vuc": "Miền Nam",
+        "tinh_trang": "Tốt",
+        "bao_duong_hang": false,
+        "chay_dich_vu": false,
+        "ngap_nuoc": false,
+        "tai_nan_nang": false,
+        "gia_goc": 357.0,
+        "gia_luat_ca": 389.33849999999995,
+        "ty_le_hieu_chinh": 1.0,
+        "gia_hieu_chinh": 357.0,
+        "do_tuong_tu": 0.8864,
+        "tuong_tu_cuc_bo": {
+          "phien_ban": 1.0,
+          "nam_sx": 1.0,
+          "so_km": 0.376,
+          "tinh_trang": 1.0,
+          "khu_vuc": 0.6,
+          "lich_su": 1.0,
+          "rui_ro": 1.0
+        }
+      },
+      {
+        "ma_tin": "MP01281",
+        "phien_ban_id": "mazda3-15-luxury",
+        "ten_xe": "Mazda Mazda3 1.5L Luxury",
+        "nam_sx": 2018,
+        "so_km": 92400.0,
+        "khu_vuc": "Miền Bắc",
+        "tinh_trang": "Tốt",
+        "bao_duong_hang": false,
+        "chay_dich_vu": false,
+        "ngap_nuoc": false,
+        "tai_nan_nang": false,
+        "gia_goc": 345.0,
+        "gia_luat_ca": 389.33849999999995,
+        "ty_le_hieu_chinh": 1.0,
+        "gia_hieu_chinh": 345.0,
+        "do_tuong_tu": 0.8839,
+        "tuong_tu_cuc_bo": {
+          "phien_ban": 1.0,
+          "nam_sx": 1.0,
+          "so_km": 0.22599999999999998,
+          "tinh_trang": 1.0,
+          "khu_vuc": 1.0,
+          "lich_su": 1.0,
+          "rui_ro": 1.0
+        }
+      },
+      {
+        "ma_tin": "MP00383",
+        "phien_ban_id": "mazda3-15-luxury",
+        "ten_xe": "Mazda Mazda3 1.5L Luxury",
+        "nam_sx": 2018,
+        "so_km": 91700.0,
+        "khu_vuc": "Miền Nam",
+        "tinh_trang": "Tốt",
+        "bao_duong_hang": false,
+        "chay_dich_vu": false,
+        "ngap_nuoc": false,
+        "tai_nan_nang": false,
+        "gia_goc": 319.0,
+        "gia_luat_ca": 389.33849999999995,
+        "ty_le_hieu_chinh": 1.0,
+        "gia_hieu_chinh": 319.0,
+        "do_tuong_tu": 0.86495,
+        "tuong_tu_cuc_bo": {
+          "phien_ban": 1.0,
+          "nam_sx": 1.0,
+          "so_km": 0.23299999999999998,
+          "tinh_trang": 1.0,
+          "khu_vuc": 0.6,
+          "lich_su": 1.0,
+          "rui_ro": 1.0
+        }
+      },
+      {
+        "ma_tin": "MP02291",
+        "phien_ban_id": "mazda3-15-luxury",
+        "ten_xe": "Mazda Mazda3 1.5L Luxury",
+        "nam_sx": 2018,
+        "so_km": 100700.0,
+        "khu_vuc": "Miền Nam",
+        "tinh_trang": "Tốt",
+        "bao_duong_hang": false,
+        "chay_dich_vu": false,
+        "ngap_nuoc": false,
+        "tai_nan_nang": false,
+        "gia_goc": 325.0,
+        "gia_luat_ca": 389.33849999999995,
+        "ty_le_hieu_chinh": 1.0,
+        "gia_hieu_chinh": 325.0,
+        "do_tuong_tu": 0.8514499999999999,
+        "tuong_tu_cuc_bo": {
+          "phien_ban": 1.0,
+          "nam_sx": 1.0,
+          "so_km": 0.14300000000000002,
+          "tinh_trang": 1.0,
+          "khu_vuc": 0.6,
+          "lich_su": 1.0,
+          "rui_ro": 1.0
+        }
+      },
+      {
+        "ma_tin": "MP01614",
+        "phien_ban_id": "mazda3-15-luxury",
+        "ten_xe": "Mazda Mazda3 1.5L Luxury",
+        "nam_sx": 2019,
+        "so_km": 75600.0,
+        "khu_vuc": "Miền Bắc",
+        "tinh_trang": "Trung bình",
+        "bao_duong_hang": false,
+        "chay_dich_vu": false,
+        "ngap_nuoc": false,
+        "tai_nan_nang": false,
+        "gia_goc": 349.0,
+        "gia_luat_ca": 358.19142,
+        "ty_le_hieu_chinh": 1.0869565217391304,
+        "gia_hieu_chinh": 379.3478260869565,
+        "do_tuong_tu": 0.8257666666666666,
+        "tuong_tu_cuc_bo": {
+          "phien_ban": 1.0,
+          "nam_sx": 0.75,
+          "so_km": 0.394,
+          "tinh_trang": 0.6666666666666667,
+          "khu_vuc": 1.0,
+          "lich_su": 1.0,
+          "rui_ro": 1.0
+        }
+      }
+    ],
+    "thoi_gian_ms": 1.6858300000421877,
+    "id": "TC07",
+    "ten": "Nghi vấn chỉnh đồng hồ km",
+    "mo_ta": "Mazda3 1.5L Luxury đời 2018 nhưng chỉ 15.000 km.",
+    "can_cu_hieu_chinh": [
+      [
+        {
+          "nhom": "GIA_MOI",
+          "yeu_to": "Giá xe mới tham chiếu",
+          "xe_can_dinh_gia": 719.0,
+          "xe_so_sanh": 719.0,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TUOI_XE",
+          "yeu_to": "Tuổi xe",
+          "xe_can_dinh_gia": 0.57,
+          "xe_so_sanh": 0.57,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "THUONG_HIEU",
+          "yeu_to": "Thương hiệu",
+          "xe_can_dinh_gia": 0.95,
+          "xe_so_sanh": 0.95,
+          "ty_so": 1.0
+        }
+      ],
+      [
+        {
+          "nhom": "GIA_MOI",
+          "yeu_to": "Giá xe mới tham chiếu",
+          "xe_can_dinh_gia": 719.0,
+          "xe_so_sanh": 719.0,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TUOI_XE",
+          "yeu_to": "Tuổi xe",
+          "xe_can_dinh_gia": 0.57,
+          "xe_so_sanh": 0.57,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "THUONG_HIEU",
+          "yeu_to": "Thương hiệu",
+          "xe_can_dinh_gia": 0.95,
+          "xe_so_sanh": 0.95,
+          "ty_so": 1.0
+        }
+      ],
+      [
+        {
+          "nhom": "GIA_MOI",
+          "yeu_to": "Giá xe mới tham chiếu",
+          "xe_can_dinh_gia": 719.0,
+          "xe_so_sanh": 719.0,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TUOI_XE",
+          "yeu_to": "Tuổi xe",
+          "xe_can_dinh_gia": 0.57,
+          "xe_so_sanh": 0.57,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "THUONG_HIEU",
+          "yeu_to": "Thương hiệu",
+          "xe_can_dinh_gia": 0.95,
+          "xe_so_sanh": 0.95,
+          "ty_so": 1.0
+        }
+      ],
+      [
+        {
+          "nhom": "GIA_MOI",
+          "yeu_to": "Giá xe mới tham chiếu",
+          "xe_can_dinh_gia": 719.0,
+          "xe_so_sanh": 719.0,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TUOI_XE",
+          "yeu_to": "Tuổi xe",
+          "xe_can_dinh_gia": 0.57,
+          "xe_so_sanh": 0.57,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "THUONG_HIEU",
+          "yeu_to": "Thương hiệu",
+          "xe_can_dinh_gia": 0.95,
+          "xe_so_sanh": 0.95,
+          "ty_so": 1.0
+        }
+      ],
+      [
+        {
+          "nhom": "GIA_MOI",
+          "yeu_to": "Giá xe mới tham chiếu",
+          "xe_can_dinh_gia": 719.0,
+          "xe_so_sanh": 719.0,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TUOI_XE",
+          "yeu_to": "Tuổi xe",
+          "xe_can_dinh_gia": 0.57,
+          "xe_so_sanh": 0.57,
+          "ty_so": 1.0
+        },
+        {
+          "nhom": "TINH_TRANG",
+          "yeu_to": "Tình trạng",
+          "xe_can_dinh_gia": 1.0,
+          "xe_so_sanh": 0.9200000000000002,
+          "ty_so": 1.0869565217391302
+        },
+        {
+          "nhom": "THUONG_HIEU",
+          "yeu_to": "Thương hiệu",
+          "xe_can_dinh_gia": 0.95,
+          "xe_so_sanh": 0.95,
+          "ty_so": 1.0
+        }
+      ]
+    ]
+  }
+]

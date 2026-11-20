@@ -1,0 +1,26 @@
+# Môi trường ảo và bộ nhớ đệm
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Bí mật và cấu hình cục bộ (không đưa lên GitHub)
+.env
+.streamlit/secrets.toml
+*.pem
+*.key
+
+# Tệp tạm khi dựng báo cáo
+outputs/report/_assets/
+~$*.docx
+*.tmp
+*.log
+
+# Hệ điều hành / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,234 @@
+{
+  "nguon_du_lieu": "Dữ liệu mô phỏng (không phải dữ liệu thị trường)",
+  "so_train": 2406,
+  "so_test": 602,
+  "so_ca_test_co_cbr": 601,
+  "so_ca_test_thieu_cbr": 1,
+  "tham_so": {
+    "cbr": {
+      "k_toi_da": 5,
+      "nguong_tuong_tu": 0.75,
+      "loc_cung_phan_khuc": true,
+      "chenh_nam_toi_da": 3,
+      "thang_do_nam": 4,
+      "thang_do_km": 100000,
+      "tuong_tu_khu_vuc_khac": 0.6,
+      "tuong_tu_phien_ban": {
+        "cung_phien_ban": 1.0,
+        "cung_dong_xe": 0.75,
+        "cung_hang_cung_phan_khuc": 0.5,
+        "cung_phan_khuc": 0.35
+      },
+      "trong_so": {
+        "phien_ban": 0.3,
+        "nam_sx": 0.2,
+        "so_km": 0.15,
+        "tinh_trang": 0.1,
+        "khu_vuc": 0.05,
+        "lich_su": 0.1,
+        "rui_ro": 0.1
+      },
+      "ghi_chu": "Trọng số và thang đo là giả định thiết kế; ngưỡng tương tự và k được kiểm tra trên tập validation tách từ train (scripts/tune_parameters.py)."
+    },
+    "ket_hop": {
+      "w_cbr_toi_da": 0.8,
+      "ghi_chu": "w_CBR = w_cbr_toi_da × (n / k_toi_da) × Sim_TB; α = 1 − w_CBR; P = α·P_luật + w_CBR·P_CBR. Không có xe đạt ngưỡng: w_CBR = 0."
+    },
+    "khoang_gia": {
+      "delta_min": 0.1,
+      "delta_max": 0.25,
+      "delta_khong_cbr": 0.12,
+      "cong_them_rui_ro": 0.03,
+      "ghi_chu": "δ = min(δ_max, max(δ_min, CV, d) + r) khi có CBR; δ = min(δ_max, δ_khong_cbr + r) khi không có CBR. CV: hệ số biến thiên có trọng số của giá hiệu chỉnh; d = |P_luật − P_CBR| / P; r = cong_them_rui_ro nếu có cảnh báo nghiêm trọng. Khoảng = [P(1−δ); P(1+δ)]. Đây là khoảng kinh nghiệm, không phải khoảng tin cậy thống kê."
+    },
+    "rf": {
+      "n_estimators": 300,
+      "min_samples_leaf": 1,
+      "max_features": 1.0,
+      "random_state": 42
+    }
+  },
+  "bang_chinh": [
+    {
+      "n": 602,
+      "MAE": 32.59952774237589,
+      "RMSE": 43.520197415718,
+      "MAPE": 7.435037564075365,
+      "MdAPE": 6.522542750929368,
+      "R2": 0.9618425297871648,
+      "ty_le_sai_so_duoi_10": 71.2624584717608,
+      "phuong_phap": "Chỉ luật",
+      "pham_vi": "toàn bộ test"
+    },
+    {
+      "n": 601,
+      "MAE": 26.192653106221933,
+      "RMSE": 36.57448967494844,
+      "MAPE": 5.817600923080308,
+      "MdAPE": 5.07797457788554,
+      "R2": 0.9730872280394954,
+      "ty_le_sai_so_duoi_10": 84.19301164725458,
+      "phuong_phap": "Chỉ CBR",
+      "pham_vi": "ca có kết quả CBR"
+    },
+    {
+      "n": 602,
+      "MAE": 26.62998671577147,
+      "RMSE": 35.820898222596824,
+      "MAPE": 6.47457172318448,
+      "MdAPE": 5.0297077934661125,
+      "R2": 0.9741493895094029,
+      "ty_le_sai_so_duoi_10": 81.22923588039868,
+      "phuong_phap": "Random Forest",
+      "pham_vi": "toàn bộ test"
+    },
+    {
+      "n": 602,
+      "MAE": 25.78191575649736,
+      "RMSE": 35.92845683378349,
+      "MAPE": 5.82147513711185,
+      "MdAPE": 4.912201759896989,
+      "R2": 0.9739939143366919,
+      "ty_le_sai_so_duoi_10": 83.55481727574751,
+      "phuong_phap": "Hệ lai luật + CBR",
+      "pham_vi": "toàn bộ test"
+    },
+    {
+      "n": 602,
+      "MAE": 26.19237163832296,
+      "RMSE": 36.55948772045037,
+      "MAPE": 5.819944890461236,
+      "MdAPE": 5.090972635519657,
+      "R2": 0.9730723741844981,
+      "ty_le_sai_so_duoi_10": 84.21926910299004,
+      "phuong_phap": "Chỉ CBR (thiếu ca → giá luật)",
+      "pham_vi": "toàn bộ test"
+    },
+    {
+      "n": 601,
+      "MAE": 37.77138699266433,
+      "RMSE": 54.536989956742104,
+      "MAPE": 9.505949892450884,
+      "MdAPE": 6.542909385039092,
+      "R2": 0.9401610161410012,
+      "ty_le_sai_so_duoi_10": 68.71880199667221,
+      "phuong_phap": "CBR không hiệu chỉnh (ablation)",
+      "pham_vi": "ca có kết quả CBR"
+    }
+  ],
+  "cung_tap_con_co_cbr": [
+    {
+      "n": 601,
+      "MAE": 32.610470035739176,
+      "RMSE": 43.54345196448355,
+      "MAPE": 7.435380938913429,
+      "MdAPE": 6.52,
+      "R2": 0.9618541240645219,
+      "ty_le_sai_so_duoi_10": 71.21464226289518,
+      "phuong_phap": "Chỉ luật"
+    },
+    {
+      "n": 601,
+      "MAE": 26.192653106221933,
+      "RMSE": 36.57448967494844,
+      "MAPE": 5.817600923080308,
+      "MdAPE": 5.07797457788554,
+      "R2": 0.9730872280394954,
+      "ty_le_sai_so_duoi_10": 84.19301164725458,
+      "phuong_phap": "Chỉ CBR"
+    },
+    {
+      "n": 601,
+      "MAE": 26.605175451555333,
+      "RMSE": 35.810618115675766,
+      "MAPE": 6.46614451930844,
+      "MdAPE": 5.017981804770505,
+      "R2": 0.9741996548501386,
+      "ty_le_sai_so_duoi_10": 81.36439267886855,
+      "phuong_phap": "Random Forest"
+    },
+    {
+      "n": 601,
+      "MAE": 25.781514269518084,
+      "RMSE": 35.942663410238694,
+      "MAPE": 5.819133715898391,
+      "MdAPE": 4.901030300441881,
+      "R2": 0.9740090356781804,
+      "ty_le_sai_so_duoi_10": 83.52745424292846,
+      "phuong_phap": "Hệ lai luật + CBR"
+    }
+  ],
+  "thoi_gian_ms": [
+    {
+      "phuong_phap": "Chỉ luật",
+      "tb_ms": 0.3986805681183358,
+      "trung_vi_ms": 0.3743100000974664,
+      "p95_ms": 0.6034859003648306,
+      "max_ms": 3.451433000009274
+    },
+    {
+      "phuong_phap": "Chỉ CBR",
+      "tb_ms": 2.042993076417325,
+      "trung_vi_ms": 1.8823519999386917,
+      "p95_ms": 3.306456600057571,
+      "max_ms": 6.964113000321959
+    },
+    {
+      "phuong_phap": "Random Forest",
+      "tb_ms": 27.05018415946502,
+      "trung_vi_ms": 26.014317499857498,
+      "p95_ms": 39.74607915010892,
+      "max_ms": 54.00305900002422
+    },
+    {
+      "phuong_phap": "Hệ lai luật + CBR",
+      "tb_ms": 1.985184024916722,
+      "trung_vi_ms": 1.8276400001013826,
+      "p95_ms": 3.275763699957679,
+      "max_ms": 7.911444000001211
+    }
+  ],
+  "rf_huan_luyen_giay": 3.9910117740000715,
+  "rf_du_doan_theo_lo_ms_moi_ca": 0.18732393521552926,
+  "khoang_gia_he_lai": {
+    "ty_le_trong_khoang": 85.04983388704319,
+    "do_rong_tb_trieu": 94.19856452105083,
+    "do_rong_tb_phan_tram": 21.112013828547173,
+    "delta_tb": 0.10556006914273586
+  },
+  "phan_bo_muc_tin_cay": {
+    "Cao": 422,
+    "Trung bình": 145,
+    "Thấp": 35
+  },
+  "w_cbr_tb": 0.7189468349944629,
+  "bootstrap_chenh_MAE_he_lai_tru": {
+    "Chỉ luật": {
+      "chenh_MAE": -6.817611985878532,
+      "ci95_thap": -8.309266804899774,
+      "ci95_cao": -5.322411946543544
+    },
+    "Random Forest": {
+      "chenh_MAE": -0.8480709592741107,
+      "ci95_thap": -2.792195395725993,
+      "ci95_cao": 1.0603565927733114
+    },
+    "Chỉ CBR (thiếu ca → giá luật)": {
+      "chenh_MAE": -0.41045588182560167,
+      "ci95_thap": -1.012239164832363,
+      "ci95_cao": 0.2128780209427807
+    }
+  },
+  "moi_truong": {
+    "thoi_diem_chay": "2026-11-20 18:11:48",
+    "he_dieu_hanh": "Linux-6.18.44-fc-v726-x86_64-with-glibc2.39",
+    "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+    "so_luong_cpu": 4,
+    "python": "3.13.18",
+    "pandas": "3.0.5",
+    "numpy": "2.5.3",
+    "scikit_learn": "1.9.1",
+    "streamlit": "1.67.0",
+    "cach_do": "time.perf_counter quanh từng lệnh dự đoán một ca; tuần tự, một tiến trình; bỏ qua 20 ca khởi động; RF dự đoán từng ca với n_jobs=1. Chỉ luật: suy diễn tiến. Chỉ CBR: suy diễn giá luật truy vấn + truy hồi + hiệu chỉnh. Hệ lai: toàn bộ dinh_gia() gồm kiểm tra nhập, suy diễn, CBR, kết hợp. Không gồm thời gian vẽ giao diện."
+  }
+}

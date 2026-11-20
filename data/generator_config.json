@@ -1,0 +1,60 @@
+{
+  "mo_ta": "Tham số của bộ sinh dữ liệu MÔ PHỎNG. Đây là 'thị trường giả định' do nhóm đặt ra để có dữ liệu thử nghiệm; không phải số liệu thu thập từ thị trường, website rao bán hay khảo sát chuyên gia.",
+  "seed": 2026,
+  "so_ban_ghi_goc": 3100,
+  "nam_quan_sat": 2026,
+  "thang_quan_sat": [1, 10],
+  "nguon_du_lieu": "Mô phỏng (seed 2026)",
+  "pho_bien_phien_ban": {
+    "toyota-vios-15e-mt": 5, "toyota-vios-15e-cvt": 7, "toyota-vios-15g-cvt": 10,
+    "toyota-cross-18v": 5, "toyota-cross-18hev": 3, "toyota-innova-20e-mt": 5, "toyota-innova-20g-at": 4,
+    "toyota-fortuner-24at-4x2": 5, "toyota-lc300-35": 0,
+    "honda-city-15g": 6, "honda-city-15rs": 4, "honda-civic-15rs": 3, "honda-crv-15e": 4, "honda-crv-15l": 4,
+    "hyundai-i10-12mt": 4, "hyundai-i10-12at": 6, "hyundai-accent-14mt": 4, "hyundai-accent-14at": 7,
+    "hyundai-accent-14at-db": 4, "hyundai-tucson-20-tc": 3, "hyundai-tucson-20-db": 3, "hyundai-santafe-25x": 4,
+    "kia-morning-mt": 4, "kia-morning-at": 5, "kia-cerato-16at-lux": 6, "kia-seltos-14t-deluxe": 4,
+    "mazda3-15-luxury": 7, "mazda-cx5-20-luxury": 6, "mazda-cx5-20-premium": 4,
+    "mitsubishi-attrage-12cvt": 3, "mitsubishi-xpander-15mt": 4, "mitsubishi-xpander-15at": 6,
+    "ford-ranger-xls-at": 6, "ford-ranger-wildtrak": 4, "ford-everest-ambiente": 4
+  },
+  "ghi_chu_pho_bien": "Land Cruiser LC300 có độ phổ biến 0: được giữ trong khung tri thức nhưng không sinh mẫu, để minh họa trường hợp thiếu tình huống tương tự.",
+  "trong_so_tuoi": [1, 5, 8, 9, 9, 9, 8, 8, 7, 6, 5, 4, 3, 2, 2],
+  "km_moi_nam": {"trung_vi": 14500, "sigma_log": 0.38},
+  "km_moi_nam_dich_vu": {"trung_vi": 33000, "sigma_log": 0.30},
+  "ty_le_chinh_odo": 0.012,
+  "xac_suat_tinh_trang_theo_tuoi": {
+    "0-2": [0.45, 0.45, 0.09, 0.01],
+    "3-5": [0.25, 0.52, 0.20, 0.03],
+    "6-9": [0.12, 0.50, 0.32, 0.06],
+    "10+": [0.05, 0.40, 0.42, 0.13]
+  },
+  "thu_tu_tinh_trang": ["Rất tốt", "Tốt", "Trung bình", "Kém"],
+  "xac_suat_bao_duong_hang": {"goc": 0.92, "giam_moi_nam": 0.055, "toi_thieu": 0.25},
+  "xac_suat_dich_vu": {"A": 0.08, "B": 0.14, "MPV": 0.14, "khac": 0.03},
+  "xac_suat_ngap_nuoc": 0.025,
+  "xac_suat_tai_nan_nang": 0.03,
+  "xac_suat_khu_vuc": {"Miền Bắc": 0.45, "Miền Trung": 0.15, "Miền Nam": 0.40},
+  "ham_gia_an": {
+    "giu_gia_nam_dau": 0.90,
+    "giu_gia_xe_moi_0_tuoi": 0.95,
+    "lambda_khau_hao_theo_phan_khuc": {"A": 0.088, "B": 0.080, "C": 0.086, "SUV-B": 0.082, "SUV-C": 0.074, "SUV-D": 0.066, "MPV": 0.070, "BAN-TAI": 0.068, "SUV-F": 0.060},
+    "he_so_hang": {"toyota": 1.06, "honda": 1.045, "mitsubishi": 1.01, "ford": 0.995, "hyundai": 0.985, "kia": 0.95, "mazda": 0.955},
+    "do_doc_km": 0.075, "he_so_km_min": 0.82, "he_so_km_max": 1.06,
+    "he_so_tinh_trang": {"Rất tốt": 1.05, "Tốt": 1.0, "Trung bình": 0.915, "Kém": 0.80},
+    "bao_duong_hang": 1.025, "chay_dich_vu": 0.87, "ngap_nuoc": 0.68, "tai_nan_nang": 0.74, "ngap_va_tai_nan": 0.60,
+    "hop_so_san": 0.955,
+    "he_so_khu_vuc": {"Miền Bắc": 1.0, "Miền Trung": 0.97, "Miền Nam": 1.01},
+    "bien_do_mua_vu": 0.012,
+    "sigma_nhieu_log": 0.055
+  },
+  "loi_co_y": {
+    "ty_le_bien_the_van_ban": 0.08,
+    "ty_le_thieu_gia_tri": 0.013,
+    "ty_le_trung_lap": 0.012,
+    "ty_le_go_nham_gia": 0.006,
+    "ty_le_nam_khong_hop_le": 0.003,
+    "ty_le_km_khong_hop_le": 0.003,
+    "ty_le_phien_ban_la": 0.005,
+    "phien_ban_la": [["Toyota", "Vios", "1.3J MT"], ["Hyundai", "Accent", "1.6 GDi"], ["Toyota", "Innova", "Venturer"], ["Kia", "Morning", "Si AT"]]
+  }
+}

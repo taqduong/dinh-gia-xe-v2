@@ -1,0 +1,48 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.18, pytest-9.1.1, pluggy-1.6.0 -- /usr/local/bin/python3
+rootdir: /home/user/dinh-gia-xe-v2
+plugins: anyio-4.15.1
+collecting ... collected 40 items
+
+tests/test_app.py::test_trang_dinh_gia_mac_dinh PASSED                   [  2%]
+tests/test_app.py::test_chon_hang_cap_nhat_dong_xe PASSED                [  5%]
+tests/test_app.py::test_luong_dinh_gia_den_ket_qua PASSED                [  7%]
+tests/test_app.py::test_loi_nhap_hien_gan_truong_va_khong_dinh_gia PASSED [ 10%]
+tests/test_app.py::test_nhac_tinh_lai_khi_dau_vao_doi PASSED             [ 12%]
+tests/test_app.py::test_kich_ban_ngap_nuoc_co_canh_bao PASSED            [ 15%]
+tests/test_app.py::test_trang_ket_qua_khi_chua_co_ket_qua PASSED         [ 17%]
+tests/test_app.py::test_trang_phan_tich_va_quan_tri PASSED               [ 20%]
+tests/test_cbr_combine.py::test_toi_da_k_xe_sap_giam_va_dat_nguong PASSED [ 22%]
+tests/test_cbr_combine.py::test_do_tuong_tu_cua_chinh_no_bang_1 PASSED   [ 25%]
+tests/test_cbr_combine.py::test_hieu_chinh_theo_ty_so_gia_luat PASSED    [ 27%]
+tests/test_cbr_combine.py::test_thieu_tinh_huong_dung_gia_luat PASSED    [ 30%]
+tests/test_cbr_combine.py::test_nguong_rat_cao_tra_ve_thieu_du_lieu PASSED [ 32%]
+tests/test_cbr_combine.py::test_cong_thuc_ket_hop PASSED                 [ 35%]
+tests/test_cbr_combine.py::test_khoang_gia_chua_gia_de_xuat PASSED       [ 37%]
+tests/test_cbr_combine.py::test_muc_tin_cay_theo_quy_tac PASSED          [ 40%]
+tests/test_cbr_combine.py::test_tap_test_khong_nam_trong_kho_tinh_huong PASSED [ 42%]
+tests/test_inference.py::test_ca_chinh_vet_va_gia PASSED                 [ 45%]
+tests/test_inference.py::test_vet_lien_mach_tu_gia_moi_den_gia_luat PASSED [ 47%]
+tests/test_inference.py::test_giai_quyet_xung_dot_theo_uu_tien PASSED    [ 50%]
+tests/test_inference.py::test_ngap_nuoc PASSED                           [ 52%]
+tests/test_inference.py::test_tai_nan_nang PASSED                        [ 55%]
+tests/test_inference.py::test_rui_ro_kep_khong_nhan_don PASSED           [ 57%]
+tests/test_inference.py::test_nghi_chinh_odo_chan_luat_di_it PASSED      [ 60%]
+tests/test_inference.py::test_tran_gia_95_phan_tram PASSED               [ 62%]
+tests/test_inference.py::test_dich_vu_va_so_san PASSED                   [ 65%]
+tests/test_inference.py::test_moi_luat_chi_chay_mot_lan PASSED           [ 67%]
+tests/test_kb.py::test_nap_tri_thuc_tu_file PASSED                       [ 70%]
+tests/test_kb.py::test_ke_thua_thuoc_tinh_khung PASSED                   [ 72%]
+tests/test_kb.py::test_co_so_tri_thuc_hien_tai_nhat_quan PASSED          [ 75%]
+tests/test_kb.py::test_phat_hien_loi_trong_tep_minh_hoa PASSED           [ 77%]
+tests/test_kb.py::test_phat_hien_khung_va_kich_ban_loi PASSED            [ 80%]
+tests/test_kb.py::test_nhom_tuoi_bao_phu_va_loai_tru PASSED              [ 82%]
+tests/test_validation_data.py::test_dau_vao_hop_le PASSED                [ 85%]
+tests/test_validation_data.py::test_nam_san_xuat_khong_hop_le PASSED     [ 87%]
+tests/test_validation_data.py::test_so_km_khong_hop_le PASSED            [ 90%]
+tests/test_validation_data.py::test_dich_vu_tu_choi_dau_vao_loi PASSED   [ 92%]
+tests/test_validation_data.py::test_chia_train_test_doc_lap PASSED       [ 95%]
+tests/test_validation_data.py::test_du_lieu_sach_tham_chieu_khung PASSED [ 97%]
+tests/test_validation_data.py::test_bo_sinh_tai_lap_voi_seed PASSED      [100%]
+
+============================== 40 passed in 4.93s ==============================

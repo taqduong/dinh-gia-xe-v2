@@ -1,0 +1,241 @@
+{
+  "mo_ta": "Cấu hình tri thức: lược đồ dữ kiện, nhóm luật, tham số CBR, công thức kết hợp, khoảng giá và mức tin cậy.",
+  "nam_dinh_gia": 2026,
+  "km_chuan_moi_nam": 15000,
+  "don_vi_gia": "triệu đồng",
+  "gia_tri_hop_le": {
+    "khu_vuc": [
+      "Miền Bắc",
+      "Miền Trung",
+      "Miền Nam"
+    ],
+    "tinh_trang": [
+      "Rất tốt",
+      "Tốt",
+      "Trung bình",
+      "Kém"
+    ],
+    "hop_so": [
+      "MT",
+      "AT",
+      "CVT"
+    ],
+    "nhien_lieu": [
+      "Xăng",
+      "Dầu",
+      "Hybrid"
+    ],
+    "nhom_giu_gia": [
+      "cao",
+      "trung_binh",
+      "thap"
+    ],
+    "muc_canh_bao": [
+      "nghiem_trong",
+      "chu_y",
+      "thong_tin"
+    ],
+    "nam_sx_toi_thieu": 1990,
+    "so_km_toi_da": 1000000,
+    "km_moi_nam_bat_thuong": 60000
+  },
+  "du_kien": {
+    "hang": {
+      "kieu": "chuoi",
+      "nguon": "khung",
+      "mo_ta": "Tên hãng xe"
+    },
+    "dong_xe": {
+      "kieu": "chuoi",
+      "nguon": "khung",
+      "mo_ta": "Tên dòng xe"
+    },
+    "phien_ban": {
+      "kieu": "chuoi",
+      "nguon": "dau_vao",
+      "mo_ta": "Mã phiên bản trong khung"
+    },
+    "ten_phien_ban": {
+      "kieu": "chuoi",
+      "nguon": "khung",
+      "mo_ta": "Tên phiên bản"
+    },
+    "phan_khuc": {
+      "kieu": "chuoi",
+      "nguon": "khung",
+      "mo_ta": "Mã phân khúc (kế thừa từ dòng xe)"
+    },
+    "kieu_dang": {
+      "kieu": "chuoi",
+      "nguon": "khung",
+      "mo_ta": "Kiểu dáng thân xe"
+    },
+    "hop_so": {
+      "kieu": "chuoi",
+      "nguon": "khung",
+      "mo_ta": "Loại hộp số",
+      "gia_tri": "hop_so"
+    },
+    "nhien_lieu": {
+      "kieu": "chuoi",
+      "nguon": "khung",
+      "mo_ta": "Nhiên liệu",
+      "gia_tri": "nhien_lieu"
+    },
+    "xuat_xu": {
+      "kieu": "chuoi",
+      "nguon": "khung",
+      "mo_ta": "Lắp ráp hay nhập khẩu"
+    },
+    "nhom_giu_gia": {
+      "kieu": "chuoi",
+      "nguon": "khung",
+      "mo_ta": "Nhóm giữ giá của hãng (kế thừa từ hãng)",
+      "gia_tri": "nhom_giu_gia"
+    },
+    "gia_moi": {
+      "kieu": "so",
+      "nguon": "khung",
+      "mo_ta": "Giá xe mới tham chiếu (triệu đồng)"
+    },
+    "nam_sx": {
+      "kieu": "so",
+      "nguon": "dau_vao",
+      "mo_ta": "Năm sản xuất"
+    },
+    "so_km": {
+      "kieu": "so",
+      "nguon": "dau_vao",
+      "mo_ta": "Số km đã đi"
+    },
+    "khu_vuc": {
+      "kieu": "chuoi",
+      "nguon": "dau_vao",
+      "mo_ta": "Khu vực bán",
+      "gia_tri": "khu_vuc"
+    },
+    "tinh_trang": {
+      "kieu": "chuoi",
+      "nguon": "dau_vao",
+      "mo_ta": "Tình trạng tổng thể",
+      "gia_tri": "tinh_trang"
+    },
+    "bao_duong_hang": {
+      "kieu": "logic",
+      "nguon": "dau_vao",
+      "mo_ta": "Bảo dưỡng định kỳ tại hãng"
+    },
+    "chay_dich_vu": {
+      "kieu": "logic",
+      "nguon": "dau_vao",
+      "mo_ta": "Từng chạy dịch vụ/taxi công nghệ"
+    },
+    "ngap_nuoc": {
+      "kieu": "logic",
+      "nguon": "dau_vao",
+      "mo_ta": "Từng bị ngập nước"
+    },
+    "tai_nan_nang": {
+      "kieu": "logic",
+      "nguon": "dau_vao",
+      "mo_ta": "Từng bị tai nạn nặng (ảnh hưởng khung gầm)"
+    },
+    "nam_dinh_gia": {
+      "kieu": "so",
+      "nguon": "he_thong",
+      "mo_ta": "Năm định giá cố định"
+    },
+    "km_chuan_moi_nam": {
+      "kieu": "so",
+      "nguon": "he_thong",
+      "mo_ta": "Số km chuẩn mỗi năm"
+    },
+    "tuoi_xe": {
+      "kieu": "so",
+      "nguon": "suy_dien",
+      "mo_ta": "Tuổi xe = năm định giá − năm sản xuất"
+    },
+    "km_chuan": {
+      "kieu": "so",
+      "nguon": "suy_dien",
+      "mo_ta": "Km chuẩn = km chuẩn mỗi năm × max(1, tuổi xe)"
+    },
+    "ty_le_km": {
+      "kieu": "so",
+      "nguon": "suy_dien",
+      "mo_ta": "Tỷ lệ km = số km / km chuẩn"
+    },
+    "nghi_tua_odo": {
+      "kieu": "logic",
+      "nguon": "suy_dien",
+      "mo_ta": "Nghi vấn đồng hồ km bị chỉnh"
+    },
+    "gia": {
+      "kieu": "so",
+      "nguon": "suy_dien",
+      "mo_ta": "Giá hiện tại trong quá trình suy diễn (triệu đồng)"
+    }
+  },
+  "nhom_luat": {
+    "DAN_XUAT": "Suy dẫn dữ kiện trung gian",
+    "KHOI_TAO": "Khởi tạo giá từ khung",
+    "RUI_RO": "Rủi ro nghiêm trọng",
+    "KIEM_TRA": "Kiểm tra bất thường",
+    "TUOI_XE": "Khấu hao theo tuổi xe",
+    "SO_KM": "Điều chỉnh theo số km",
+    "TINH_TRANG": "Tình trạng xe",
+    "LICH_SU": "Lịch sử sử dụng và bảo dưỡng",
+    "DAC_DIEM": "Đặc điểm phiên bản",
+    "THUONG_HIEU": "Thương hiệu và thanh khoản",
+    "RANG_BUOC": "Ràng buộc giá"
+  },
+  "nhom_loai_tru_theo_dieu_kien": [
+    "TUOI_XE",
+    "SO_KM",
+    "TINH_TRANG"
+  ],
+  "nhom_bao_phu_tuoi": "TUOI_XE",
+  "cbr": {
+    "k_toi_da": 5,
+    "nguong_tuong_tu": 0.75,
+    "loc_cung_phan_khuc": true,
+    "chenh_nam_toi_da": 3,
+    "thang_do_nam": 4,
+    "thang_do_km": 100000,
+    "tuong_tu_khu_vuc_khac": 0.6,
+    "tuong_tu_phien_ban": {
+      "cung_phien_ban": 1.0,
+      "cung_dong_xe": 0.75,
+      "cung_hang_cung_phan_khuc": 0.5,
+      "cung_phan_khuc": 0.35
+    },
+    "trong_so": {
+      "phien_ban": 0.3,
+      "nam_sx": 0.2,
+      "so_km": 0.15,
+      "tinh_trang": 0.1,
+      "khu_vuc": 0.05,
+      "lich_su": 0.1,
+      "rui_ro": 0.1
+    },
+    "ghi_chu": "Trọng số và thang đo là giả định thiết kế; ngưỡng tương tự và k được kiểm tra trên tập validation tách từ train (scripts/tune_parameters.py)."
+  },
+  "ket_hop": {
+    "w_cbr_toi_da": 0.8,
+    "ghi_chu": "w_CBR = w_cbr_toi_da × (n / k_toi_da) × Sim_TB; α = 1 − w_CBR; P = α·P_luật + w_CBR·P_CBR. Không có xe đạt ngưỡng: w_CBR = 0."
+  },
+  "khoang_gia": {
+    "delta_min": 0.1,
+    "delta_max": 0.25,
+    "delta_khong_cbr": 0.12,
+    "cong_them_rui_ro": 0.03,
+    "ghi_chu": "δ = min(δ_max, max(δ_min, CV, d) + r) khi có CBR; δ = min(δ_max, δ_khong_cbr + r) khi không có CBR. CV: hệ số biến thiên có trọng số của giá hiệu chỉnh; d = |P_luật − P_CBR| / P; r = cong_them_rui_ro nếu có cảnh báo nghiêm trọng. Khoảng = [P(1−δ); P(1+δ)]. Đây là khoảng kinh nghiệm, không phải khoảng tin cậy thống kê."
+  },
+  "muc_tin_cay": {
+    "cao_so_xe_toi_thieu": 3,
+    "cao_sim_tb_toi_thieu": 0.85,
+    "cao_chenh_lech_toi_da": 0.1,
+    "thap_chenh_lech_tren": 0.2,
+    "ghi_chu": "Mức tin cậy là phân loại theo quy tắc kinh nghiệm (Cao/Trung bình/Thấp), không phải xác suất đúng hay độ tin cậy thống kê."
+  }
+}

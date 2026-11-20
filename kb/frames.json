@@ -1,0 +1,150 @@
+{
+  "mo_ta": "Khung tri thức Hãng xe → Dòng xe → Phiên bản. Phiên bản kế thừa phân khúc, kiểu dáng từ dòng xe và nhóm giữ giá từ hãng.",
+  "ghi_chu_nguon": "GIẢ ĐỊNH: giá xe mới tham chiếu (triệu đồng) là mốc minh họa do nhóm đặt gần với mức niêm yết từng được công bố, CHƯA đối chiếu bảng giá chính thức tại thời điểm định giá. Một giá được dùng chung cho mọi đời xe của phiên bản. Nhóm giữ giá của hãng là giả định kinh nghiệm của nhóm, chưa được chuyên gia xác nhận.",
+  "phan_khuc": [
+    {"ma": "A", "ten": "Hạng A – xe đô thị cỡ nhỏ"},
+    {"ma": "B", "ten": "Hạng B – sedan cỡ nhỏ"},
+    {"ma": "C", "ten": "Hạng C – sedan cỡ trung"},
+    {"ma": "SUV-B", "ten": "SUV/CUV cỡ B"},
+    {"ma": "SUV-C", "ten": "SUV/CUV cỡ C"},
+    {"ma": "SUV-D", "ten": "SUV 7 chỗ cỡ D"},
+    {"ma": "MPV", "ten": "MPV đa dụng 7 chỗ"},
+    {"ma": "BAN-TAI", "ten": "Bán tải"},
+    {"ma": "SUV-F", "ten": "SUV cỡ lớn hạng sang"}
+  ],
+  "hang_xe": [
+    {
+      "id": "toyota", "ten": "Toyota", "quoc_gia": "Nhật Bản", "nhom_giu_gia": "cao",
+      "dong_xe": [
+        {"id": "toyota-vios", "ten": "Vios", "phan_khuc": "B", "kieu_dang": "Sedan",
+         "phien_ban": [
+           {"id": "toyota-vios-15e-mt", "ten": "1.5E MT", "dong_co": "1.5L xăng", "hop_so": "MT", "nhien_lieu": "Xăng", "so_cho": 5, "xuat_xu": "Lắp ráp trong nước", "gia_moi": 458, "nam_tu": 2014, "nam_den": 2026},
+           {"id": "toyota-vios-15e-cvt", "ten": "1.5E CVT", "dong_co": "1.5L xăng", "hop_so": "CVT", "nhien_lieu": "Xăng", "so_cho": 5, "xuat_xu": "Lắp ráp trong nước", "gia_moi": 488, "nam_tu": 2014, "nam_den": 2026},
+           {"id": "toyota-vios-15g-cvt", "ten": "1.5G CVT", "dong_co": "1.5L xăng", "hop_so": "CVT", "nhien_lieu": "Xăng", "so_cho": 5, "xuat_xu": "Lắp ráp trong nước", "gia_moi": 545, "nam_tu": 2014, "nam_den": 2026}
+         ]},
+        {"id": "toyota-corolla-cross", "ten": "Corolla Cross", "phan_khuc": "SUV-C", "kieu_dang": "SUV",
+         "phien_ban": [
+           {"id": "toyota-cross-18v", "ten": "1.8V", "dong_co": "1.8L xăng", "hop_so": "CVT", "nhien_lieu": "Xăng", "so_cho": 5, "xuat_xu": "Nhập khẩu", "gia_moi": 820, "nam_tu": 2020, "nam_den": 2026},
+           {"id": "toyota-cross-18hev", "ten": "1.8HEV", "dong_co": "1.8L hybrid", "hop_so": "CVT", "nhien_lieu": "Hybrid", "so_cho": 5, "xuat_xu": "Nhập khẩu", "gia_moi": 905, "nam_tu": 2020, "nam_den": 2026}
+         ]},
+        {"id": "toyota-innova", "ten": "Innova", "phan_khuc": "MPV", "kieu_dang": "MPV",
+         "phien_ban": [
+           {"id": "toyota-innova-20e-mt", "ten": "2.0E MT", "dong_co": "2.0L xăng", "hop_so": "MT", "nhien_lieu": "Xăng", "so_cho": 8, "xuat_xu": "Lắp ráp trong nước", "gia_moi": 755, "nam_tu": 2012, "nam_den": 2023},
+           {"id": "toyota-innova-20g-at", "ten": "2.0G AT", "dong_co": "2.0L xăng", "hop_so": "AT", "nhien_lieu": "Xăng", "so_cho": 8, "xuat_xu": "Lắp ráp trong nước", "gia_moi": 870, "nam_tu": 2012, "nam_den": 2023}
+         ]},
+        {"id": "toyota-fortuner", "ten": "Fortuner", "phan_khuc": "SUV-D", "kieu_dang": "SUV",
+         "phien_ban": [
+           {"id": "toyota-fortuner-24at-4x2", "ten": "2.4AT 4x2", "dong_co": "2.4L dầu", "hop_so": "AT", "nhien_lieu": "Dầu", "so_cho": 7, "xuat_xu": "Lắp ráp trong nước", "gia_moi": 1055, "nam_tu": 2012, "nam_den": 2026}
+         ]},
+        {"id": "toyota-land-cruiser", "ten": "Land Cruiser", "phan_khuc": "SUV-F", "kieu_dang": "SUV",
+         "phien_ban": [
+           {"id": "toyota-lc300-35", "ten": "LC300 3.5 V6", "dong_co": "3.5L xăng tăng áp", "hop_so": "AT", "nhien_lieu": "Xăng", "so_cho": 7, "xuat_xu": "Nhập khẩu", "gia_moi": 4286, "nam_tu": 2022, "nam_den": 2026}
+         ]}
+      ]
+    },
+    {
+      "id": "honda", "ten": "Honda", "quoc_gia": "Nhật Bản", "nhom_giu_gia": "cao",
+      "dong_xe": [
+        {"id": "honda-city", "ten": "City", "phan_khuc": "B", "kieu_dang": "Sedan",
+         "phien_ban": [
+           {"id": "honda-city-15g", "ten": "1.5G", "dong_co": "1.5L xăng", "hop_so": "CVT", "nhien_lieu": "Xăng", "so_cho": 5, "xuat_xu": "Lắp ráp trong nước", "gia_moi": 529, "nam_tu": 2014, "nam_den": 2026},
+           {"id": "honda-city-15rs", "ten": "1.5 RS", "dong_co": "1.5L xăng", "hop_so": "CVT", "nhien_lieu": "Xăng", "so_cho": 5, "xuat_xu": "Lắp ráp trong nước", "gia_moi": 569, "nam_tu": 2014, "nam_den": 2026}
+         ]},
+        {"id": "honda-civic", "ten": "Civic", "phan_khuc": "C", "kieu_dang": "Sedan",
+         "phien_ban": [
+           {"id": "honda-civic-15rs", "ten": "1.5 RS", "dong_co": "1.5L xăng tăng áp", "hop_so": "CVT", "nhien_lieu": "Xăng", "so_cho": 5, "xuat_xu": "Nhập khẩu", "gia_moi": 870, "nam_tu": 2017, "nam_den": 2026}
+         ]},
+        {"id": "honda-crv", "ten": "CR-V", "phan_khuc": "SUV-C", "kieu_dang": "SUV",
+         "phien_ban": [
+           {"id": "honda-crv-15e", "ten": "1.5E", "dong_co": "1.5L xăng tăng áp", "hop_so": "CVT", "nhien_lieu": "Xăng", "so_cho": 7, "xuat_xu": "Lắp ráp trong nước", "gia_moi": 998, "nam_tu": 2018, "nam_den": 2026},
+           {"id": "honda-crv-15l", "ten": "1.5L", "dong_co": "1.5L xăng tăng áp", "hop_so": "CVT", "nhien_lieu": "Xăng", "so_cho": 7, "xuat_xu": "Lắp ráp trong nước", "gia_moi": 1118, "nam_tu": 2018, "nam_den": 2026}
+         ]}
+      ]
+    },
+    {
+      "id": "hyundai", "ten": "Hyundai", "quoc_gia": "Hàn Quốc", "nhom_giu_gia": "trung_binh",
+      "dong_xe": [
+        {"id": "hyundai-grand-i10", "ten": "Grand i10", "phan_khuc": "A", "kieu_dang": "Hatchback",
+         "phien_ban": [
+           {"id": "hyundai-i10-12mt", "ten": "1.2 MT", "dong_co": "1.2L xăng", "hop_so": "MT", "nhien_lieu": "Xăng", "so_cho": 5, "xuat_xu": "Lắp ráp trong nước", "gia_moi": 360, "nam_tu": 2014, "nam_den": 2026},
+           {"id": "hyundai-i10-12at", "ten": "1.2 AT", "dong_co": "1.2L xăng", "hop_so": "AT", "nhien_lieu": "Xăng", "so_cho": 5, "xuat_xu": "Lắp ráp trong nước", "gia_moi": 405, "nam_tu": 2014, "nam_den": 2026}
+         ]},
+        {"id": "hyundai-accent", "ten": "Accent", "phan_khuc": "B", "kieu_dang": "Sedan",
+         "phien_ban": [
+           {"id": "hyundai-accent-14mt", "ten": "1.4 MT", "dong_co": "1.4L xăng", "hop_so": "MT", "nhien_lieu": "Xăng", "so_cho": 5, "xuat_xu": "Lắp ráp trong nước", "gia_moi": 426, "nam_tu": 2013, "nam_den": 2026},
+           {"id": "hyundai-accent-14at", "ten": "1.4 AT", "dong_co": "1.4L xăng", "hop_so": "AT", "nhien_lieu": "Xăng", "so_cho": 5, "xuat_xu": "Lắp ráp trong nước", "gia_moi": 501, "nam_tu": 2013, "nam_den": 2026},
+           {"id": "hyundai-accent-14at-db", "ten": "1.4 AT Đặc biệt", "dong_co": "1.4L xăng", "hop_so": "AT", "nhien_lieu": "Xăng", "so_cho": 5, "xuat_xu": "Lắp ráp trong nước", "gia_moi": 542, "nam_tu": 2013, "nam_den": 2026}
+         ]},
+        {"id": "hyundai-tucson", "ten": "Tucson", "phan_khuc": "SUV-C", "kieu_dang": "SUV",
+         "phien_ban": [
+           {"id": "hyundai-tucson-20-tc", "ten": "2.0 Tiêu chuẩn", "dong_co": "2.0L xăng", "hop_so": "AT", "nhien_lieu": "Xăng", "so_cho": 5, "xuat_xu": "Lắp ráp trong nước", "gia_moi": 825, "nam_tu": 2015, "nam_den": 2026},
+           {"id": "hyundai-tucson-20-db", "ten": "2.0 Đặc biệt", "dong_co": "2.0L xăng", "hop_so": "AT", "nhien_lieu": "Xăng", "so_cho": 5, "xuat_xu": "Lắp ráp trong nước", "gia_moi": 925, "nam_tu": 2015, "nam_den": 2026}
+         ]},
+        {"id": "hyundai-santafe", "ten": "Santa Fe", "phan_khuc": "SUV-D", "kieu_dang": "SUV",
+         "phien_ban": [
+           {"id": "hyundai-santafe-25x", "ten": "2.5 Xăng", "dong_co": "2.5L xăng", "hop_so": "AT", "nhien_lieu": "Xăng", "so_cho": 7, "xuat_xu": "Lắp ráp trong nước", "gia_moi": 1030, "nam_tu": 2013, "nam_den": 2026}
+         ]}
+      ]
+    },
+    {
+      "id": "kia", "ten": "Kia", "quoc_gia": "Hàn Quốc", "nhom_giu_gia": "thap",
+      "dong_xe": [
+        {"id": "kia-morning", "ten": "Morning", "phan_khuc": "A", "kieu_dang": "Hatchback",
+         "phien_ban": [
+           {"id": "kia-morning-mt", "ten": "1.25 MT", "dong_co": "1.25L xăng", "hop_so": "MT", "nhien_lieu": "Xăng", "so_cho": 5, "xuat_xu": "Lắp ráp trong nước", "gia_moi": 349, "nam_tu": 2012, "nam_den": 2026},
+           {"id": "kia-morning-at", "ten": "1.25 AT", "dong_co": "1.25L xăng", "hop_so": "AT", "nhien_lieu": "Xăng", "so_cho": 5, "xuat_xu": "Lắp ráp trong nước", "gia_moi": 389, "nam_tu": 2012, "nam_den": 2026}
+         ]},
+        {"id": "kia-cerato", "ten": "Cerato", "phan_khuc": "C", "kieu_dang": "Sedan",
+         "phien_ban": [
+           {"id": "kia-cerato-16at-lux", "ten": "1.6 AT Luxury", "dong_co": "1.6L xăng", "hop_so": "AT", "nhien_lieu": "Xăng", "so_cho": 5, "xuat_xu": "Lắp ráp trong nước", "gia_moi": 599, "nam_tu": 2016, "nam_den": 2026}
+         ]},
+        {"id": "kia-seltos", "ten": "Seltos", "phan_khuc": "SUV-B", "kieu_dang": "SUV",
+         "phien_ban": [
+           {"id": "kia-seltos-14t-deluxe", "ten": "1.4 Turbo Deluxe", "dong_co": "1.4L xăng tăng áp", "hop_so": "AT", "nhien_lieu": "Xăng", "so_cho": 5, "xuat_xu": "Lắp ráp trong nước", "gia_moi": 679, "nam_tu": 2020, "nam_den": 2026}
+         ]}
+      ]
+    },
+    {
+      "id": "mazda", "ten": "Mazda", "quoc_gia": "Nhật Bản", "nhom_giu_gia": "thap",
+      "dong_xe": [
+        {"id": "mazda-3", "ten": "Mazda3", "phan_khuc": "C", "kieu_dang": "Sedan",
+         "phien_ban": [
+           {"id": "mazda3-15-luxury", "ten": "1.5L Luxury", "dong_co": "1.5L xăng", "hop_so": "AT", "nhien_lieu": "Xăng", "so_cho": 5, "xuat_xu": "Lắp ráp trong nước", "gia_moi": 719, "nam_tu": 2015, "nam_den": 2026}
+         ]},
+        {"id": "mazda-cx5", "ten": "CX-5", "phan_khuc": "SUV-C", "kieu_dang": "SUV",
+         "phien_ban": [
+           {"id": "mazda-cx5-20-luxury", "ten": "2.0L Luxury", "dong_co": "2.0L xăng", "hop_so": "AT", "nhien_lieu": "Xăng", "so_cho": 5, "xuat_xu": "Lắp ráp trong nước", "gia_moi": 879, "nam_tu": 2013, "nam_den": 2026},
+           {"id": "mazda-cx5-20-premium", "ten": "2.0L Premium", "dong_co": "2.0L xăng", "hop_so": "AT", "nhien_lieu": "Xăng", "so_cho": 5, "xuat_xu": "Lắp ráp trong nước", "gia_moi": 929, "nam_tu": 2013, "nam_den": 2026}
+         ]}
+      ]
+    },
+    {
+      "id": "mitsubishi", "ten": "Mitsubishi", "quoc_gia": "Nhật Bản", "nhom_giu_gia": "trung_binh",
+      "dong_xe": [
+        {"id": "mitsubishi-attrage", "ten": "Attrage", "phan_khuc": "B", "kieu_dang": "Sedan",
+         "phien_ban": [
+           {"id": "mitsubishi-attrage-12cvt", "ten": "1.2 CVT", "dong_co": "1.2L xăng", "hop_so": "CVT", "nhien_lieu": "Xăng", "so_cho": 5, "xuat_xu": "Nhập khẩu", "gia_moi": 465, "nam_tu": 2014, "nam_den": 2026}
+         ]},
+        {"id": "mitsubishi-xpander", "ten": "Xpander", "phan_khuc": "MPV", "kieu_dang": "MPV",
+         "phien_ban": [
+           {"id": "mitsubishi-xpander-15mt", "ten": "1.5 MT", "dong_co": "1.5L xăng", "hop_so": "MT", "nhien_lieu": "Xăng", "so_cho": 7, "xuat_xu": "Lắp ráp trong nước", "gia_moi": 560, "nam_tu": 2018, "nam_den": 2026},
+           {"id": "mitsubishi-xpander-15at", "ten": "1.5 AT", "dong_co": "1.5L xăng", "hop_so": "AT", "nhien_lieu": "Xăng", "so_cho": 7, "xuat_xu": "Lắp ráp trong nước", "gia_moi": 598, "nam_tu": 2018, "nam_den": 2026}
+         ]}
+      ]
+    },
+    {
+      "id": "ford", "ten": "Ford", "quoc_gia": "Hoa Kỳ", "nhom_giu_gia": "trung_binh",
+      "dong_xe": [
+        {"id": "ford-ranger", "ten": "Ranger", "phan_khuc": "BAN-TAI", "kieu_dang": "Bán tải",
+         "phien_ban": [
+           {"id": "ford-ranger-xls-at", "ten": "XLS 2.0 AT 4x2", "dong_co": "2.0L dầu", "hop_so": "AT", "nhien_lieu": "Dầu", "so_cho": 5, "xuat_xu": "Lắp ráp trong nước", "gia_moi": 707, "nam_tu": 2012, "nam_den": 2026},
+           {"id": "ford-ranger-wildtrak", "ten": "Wildtrak 2.0 AT 4x4", "dong_co": "2.0L dầu", "hop_so": "AT", "nhien_lieu": "Dầu", "so_cho": 5, "xuat_xu": "Lắp ráp trong nước", "gia_moi": 979, "nam_tu": 2012, "nam_den": 2026}
+         ]},
+        {"id": "ford-everest", "ten": "Everest", "phan_khuc": "SUV-D", "kieu_dang": "SUV",
+         "phien_ban": [
+           {"id": "ford-everest-ambiente", "ten": "Ambiente 2.0 AT 4x2", "dong_co": "2.0L dầu", "hop_so": "AT", "nhien_lieu": "Dầu", "so_cho": 7, "xuat_xu": "Lắp ráp trong nước", "gia_moi": 1099, "nam_tu": 2015, "nam_den": 2026}
+         ]}
+      ]
+    }
+  ]
+}

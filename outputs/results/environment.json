@@ -1,0 +1,12 @@
+{
+  "thoi_diem_chay": "2026-11-20 18:11:48",
+  "he_dieu_hanh": "Linux-6.18.44-fc-v726-x86_64-with-glibc2.39",
+  "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+  "so_luong_cpu": 4,
+  "python": "3.13.18",
+  "pandas": "3.0.5",
+  "numpy": "2.5.3",
+  "scikit_learn": "1.9.1",
+  "streamlit": "1.67.0",
+  "cach_do": "time.perf_counter quanh từng lệnh dự đoán một ca; tuần tự, một tiến trình; bỏ qua 20 ca khởi động; RF dự đoán từng ca với n_jobs=1. Chỉ luật: suy diễn tiến. Chỉ CBR: suy diễn giá luật truy vấn + truy hồi + hiệu chỉnh. Hệ lai: toàn bộ dinh_gia() gồm kiểm tra nhập, suy diễn, CBR, kết hợp. Không gồm thời gian vẽ giao diện."
+}

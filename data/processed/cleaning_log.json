@@ -1,0 +1,101 @@
+{
+  "nguon": "Dữ liệu mô phỏng (data/raw/simulated_listings_raw.csv)",
+  "cac_buoc": [
+    {
+      "buoc": "0. Dữ liệu gốc",
+      "mo_ta": "Bản ghi do bộ sinh mô phỏng tạo, đã chèn lỗi có chủ ý",
+      "truoc": 3137,
+      "sau": 3137,
+      "bi_loai": 0
+    },
+    {
+      "buoc": "1. Chuẩn hóa văn bản",
+      "mo_ta": "Bỏ khoảng trắng thừa, thống nhất chữ hoa/thường, dấu, giá trị Có/Không",
+      "truoc": 3137,
+      "sau": 3137,
+      "bi_loai": 0,
+      "so_o_chuan_hoa": 334
+    },
+    {
+      "buoc": "2. Loại bản ghi thiếu dữ liệu",
+      "mo_ta": "Thiếu giá, năm, số km, phiên bản, tình trạng hoặc khu vực",
+      "truoc": 3137,
+      "sau": 3097,
+      "bi_loai": 40
+    },
+    {
+      "buoc": "3. Loại tin trùng lặp",
+      "mo_ta": "Trùng toàn bộ nội dung (trừ mã tin), giữ bản đầu tiên",
+      "truoc": 3097,
+      "sau": 3060,
+      "bi_loai": 37
+    },
+    {
+      "buoc": "4. Đối chiếu khung tri thức",
+      "mo_ta": "Loại phiên bản không có trong frames.json",
+      "truoc": 3060,
+      "sau": 3045,
+      "bi_loai": 15
+    },
+    {
+      "buoc": "5. Loại năm/số km không hợp lệ",
+      "mo_ta": "Năm ngoài [1990; 2026] hoặc ngoài đời của phiên bản; km < 0 hoặc > 1.000.000",
+      "truoc": 3045,
+      "sau": 3027,
+      "bi_loai": 18
+    },
+    {
+      "buoc": "6. Loại giá ngoại lai",
+      "mo_ta": "Ngoài [Q1 − 3·IQR; Q3 + 3·IQR] của log(giá/giá mới) trong từng nhóm tuổi",
+      "truoc": 3027,
+      "sau": 3008,
+      "bi_loai": 19
+    },
+    {
+      "buoc": "7. Dữ liệu sạch",
+      "mo_ta": "Bản ghi dùng cho chia train/test",
+      "truoc": 3008,
+      "sau": 3008,
+      "bi_loai": 0
+    }
+  ],
+  "ly_do_loai": {
+    "Thiếu trường bắt buộc": 40,
+    "Tin đăng trùng lặp nội dung": 37,
+    "Giá ngoại lai (IQR ×3 trên log(giá/giá mới) theo nhóm tuổi)": 19,
+    "Phiên bản không có trong khung tri thức": 15,
+    "Năm sản xuất ngoài khoảng hợp lệ": 9,
+    "Số km âm hoặc vượt giới hạn": 9
+  },
+  "so_xe_rui_ro_bi_loai_do_ngoai_lai": 1,
+  "chia_tap": {
+    "phuong_phap": "train_test_split phân tầng theo phan_khuc, test_size=0,2, random_state=42",
+    "so_sach": 3008,
+    "so_train": 2406,
+    "so_test": 602,
+    "train_theo_phan_khuc": {
+      "A": 268,
+      "B": 747,
+      "BAN-TAI": 126,
+      "C": 217,
+      "MPV": 271,
+      "SUV-B": 67,
+      "SUV-C": 483,
+      "SUV-D": 227
+    },
+    "test_theo_phan_khuc": {
+      "A": 67,
+      "B": 187,
+      "BAN-TAI": 31,
+      "C": 54,
+      "MPV": 68,
+      "SUV-B": 17,
+      "SUV-C": 121,
+      "SUV-D": 57
+    },
+    "bam_ma_tin_train": "dbc4e77c44461bcf",
+    "bam_ma_tin_test": "45c4c73020bd39e1",
+    "giao_train_test": 0
+  },
+  "nguyen_tac": "Tập test không tham gia kho tình huống CBR, huấn luyện Random Forest hay chọn tham số."
+}
